@@ -1,0 +1,72 @@
+{
+  "mode": "DRY_RUN_PAPER_100M",
+  "dry_run": true,
+  "trial_days": 30,
+  "start_date": "2026-11-23",
+  "last_updated_date": "2026-11-23",
+  "day_num": 1,
+  "initial_capital_krw": 100000000.0,
+  "hwm_krw": 100000000.0,
+  "total_equity_krw": 99978860.43,
+  "buckets": {
+    "crypto_short_turbo1": {
+      "name": "① 단기 코인 (Turbo-1)",
+      "initial_krw": 28330000.0,
+      "cash_krw": 28330000.0,
+      "equity_krw": 28330000.0,
+      "holdings_summary": "업비트 KRW 현금 100% 방어 대기",
+      "positions": {}
+    },
+    "krx_medium_d3": {
+      "name": "② 중기 KRX (D-3)",
+      "initial_krw": 28330000.0,
+      "cash_krw": 28330000.0,
+      "equity_krw": 28330000.0,
+      "last_interest_date": "2026-11-23",
+      "last_action_date": "2026-11-23",
+      "holdings_summary": "현금/RP(연 2.5%) 100% 방어 대기",
+      "positions": {}
+    },
+    "longterm_core_l3": {
+      "name": "③ 장기 코어 (L-3)",
+      "initial_krw": 28330000.0,
+      "cash_krw": 122760.43,
+      "equity_krw": 28308860.43,
+      "initialized": true,
+      "last_rebal_month": "2026-11",
+      "holdings_summary": "KODEX 골드선물(H) 700주 + KODEX 단기채권 124주",
+      "positions": {
+        "GOLD": {
+          "ticker": "132030.KS",
+          "name": "KODEX 골드선물(H)",
+          "qty": 700,
+          "entry_price": 20200.0,
+          "last_price": 20200.0,
+          "weight_target_pct": 50.0
+        },
+        "SHORT_BOND": {
+          "ticker": "153130.KS",
+          "name": "KODEX 단기채권",
+          "qty": 124,
+          "entry_price": 113275.0,
+          "last_price": 113275.0,
+          "weight_target_pct": 50.0
+        }
+      }
+    },
+    "skh_rocket_2x": {
+      "name": "④ 하이닉스 2배 로켓",
+      "initial_krw": 15010000.0,
+      "cash_krw": 15010000.0,
+      "equity_krw": 15010000.0,
+      "mode": "SAFE_RP",
+      "last_skh_close": 1089000.0,
+      "last_eval_date": "2026-11-23",
+      "holdings_summary": "단기채/RP(연 2.5%) 100% 안전 대피"
+    }
+  },
+  "last_updated_kst": "2026-11-23 15:49:43 KST",
+  "cum_return_pct": -0.0211,
+  "cum_pnl_krw": -21140.0,
+  "drawdown_pct": -0.0211
+}

@@ -1,0 +1,142 @@
+{
+  "project": "Invest_God",
+  "phase": "Phase 2 Live Operational System",
+  "portfolio_version": "Master Portfolio v2 (85:15 Barbell)",
+  "dry_run": true,
+  "cloud_24_7_enabled": true,
+  "portfolio_weights": {
+    "crypto_short_turbo1": 0.2833333333,
+    "krx_medium_d3": 0.2833333333,
+    "longterm_core_l3": 0.2833333334,
+    "skh_rocket_2x": 0.15
+  },
+  "portfolio_weights_display_pct": {
+    "crypto_short_turbo1": 28.33,
+    "krx_medium_d3": 28.33,
+    "longterm_core_l3": 28.33,
+    "skh_rocket_2x": 15.0
+  },
+  "rebalancing": {
+    "frequency": "quarterly",
+    "months": [1, 4, 7, 10],
+    "rule": "Restore 85% Core (3-Bucket Equal) : 15% Rocket on first trading day of each quarter"
+  },
+  "upbit_coins": [
+    "KRW-BTC",
+    "KRW-ETH",
+    "KRW-SOL",
+    "KRW-XRP",
+    "KRW-ADA",
+    "KRW-DOGE",
+    "KRW-AVAX",
+    "KRW-LINK"
+  ],
+  "risk_guardrails": {
+    "leverage": 1.0,
+    "risk_per_trade": 0.015,
+    "single_coin_cap": 0.33,
+    "max_positions": 4,
+    "hwm_throttle_dd": -0.20,
+    "daily_loss_kill_switch": -0.05,
+    "fee_slippage_oneway": 0.0018
+  },
+  "turbo1_params": {
+    "candle_unit_minutes": 240,
+    "candle_fetch_count": 650,
+    "btc_regime_ema": 600,
+    "ema_fast": 50,
+    "ema_slow": 200,
+    "donchian_entry": 48,
+    "donchian_exit": 24,
+    "vol_ma": 20,
+    "vol_mult": 1.3,
+    "atr_period": 14,
+    "hard_stop_atr": 2.0,
+    "trailing_stop_atr": 3.0,
+    "initial_paper_capital_krw": 28330000
+  },
+  "krx_d3_params": {
+    "kospi_ticker": "^KS11",
+    "kosdaq_ticker": "^KQ11",
+    "market_ma_period": 60,
+    "market_5d_crash_limit": -0.05,
+    "min_price_krw": 2000,
+    "min_trading_value_krw": 10000000000,
+    "vol_value_mult": 2.5,
+    "breakout_period": 20,
+    "min_daily_ret": 0.03,
+    "max_daily_ret": 0.20,
+    "max_open_gap": 0.15,
+    "hard_stop_pct": -0.08,
+    "trailing_stop_pct": -0.15,
+    "max_hold_days": 60,
+    "max_positions": 5,
+    "hwm_throttle_dd": -0.15
+  },
+  "longterm_l3_params": {
+    "ma_period": 120,
+    "offensive_assets": [
+      {
+        "id": "NASDAQ100",
+        "name": "TIGER 미국나스닥100",
+        "ticker": "133690.KS",
+        "source": "yfinance",
+        "base_weight": 0.40
+      },
+      {
+        "id": "KOSPI200",
+        "name": "KODEX 200",
+        "ticker": "069500.KS",
+        "source": "yfinance",
+        "base_weight": 0.30
+      },
+      {
+        "id": "BTC_KRW",
+        "name": "비트코인 (업비트 KRW-BTC)",
+        "ticker": "KRW-BTC",
+        "source": "upbit",
+        "base_weight": 0.30
+      }
+    ],
+    "defensive_assets": [
+      {
+        "id": "GOLD",
+        "name": "KODEX 골드선물(H)",
+        "ticker": "132030.KS",
+        "split": 0.50
+      },
+      {
+        "id": "SHORT_BOND",
+        "name": "KODEX 단기채권",
+        "ticker": "153130.KS",
+        "split": 0.50
+      }
+    ]
+  },
+  "rocket_params": {
+    "name": "SK하이닉스 2배 로켓",
+    "ticker": "000660.KS",
+    "ma_fast": 20,
+    "ma_slow": 120,
+    "on_instrument": "SK하이닉스 2배 레버리지 ETF/ETN",
+    "off_instrument": "RP / 파킹형 단기채 ETF (CD금리·KOFR)"
+  },
+  "schedules": {
+    "daily_signal_report": {
+      "runner": "github_actions",
+      "timezone": "UTC",
+      "cron_utc": "20 7 * * 1-5",
+      "kst_description": "평일 16:20 KST (월~금)",
+      "pc_off_capable": true
+    },
+    "upbit_turbo1_bot": {
+      "runner": "oracle_cloud_fixed_ip_vps",
+      "timezone": "UTC",
+      "systemd_on_calendar": "*-*-* 00,04,08,12,16,20:02:00 UTC",
+      "utc_hours": [0, 4, 8, 12, 16, 20],
+      "minute": 2,
+      "pc_off_capable": true,
+      "fixed_ip_required": true
+    }
+  }
+}

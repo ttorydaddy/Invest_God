@@ -1,0 +1,175 @@
+{
+  "strategies": {
+    "Strategy_A_VCP_Breakout": {
+      "strategy": "Strategy_A_VCP_Breakout",
+      "observed_from_csv": {
+        "trading_days_checked": 1439,
+        "max_invested_weight": 0.9999997929862882,
+        "max_positions": 5,
+        "min_cash": 41.71989394724369,
+        "min_equity": 76381537.52494162,
+        "max_single_entry_weight": 0.1999996267859873,
+        "round_trip_cost": 0.007299999999999999,
+        "stop_loss_pct": 0.08,
+        "lookahead_max_diff": 0.0,
+        "full_net_cagr": 0.08370074600563004,
+        "oos_net_cagr": 0.27549398294987704,
+        "oos_net_sharpe": 0.8733112260344313
+      },
+      "clauses": [
+        {
+          "clause": "SLA-1_NoLeverage_TotalWeight_LE_100pct",
+          "status": "SAT",
+          "passed": true
+        },
+        {
+          "clause": "SLA-2_NoBankruptcy_Cash_GE_0_Equity_GT_0",
+          "status": "SAT",
+          "passed": true
+        },
+        {
+          "clause": "SLA-3_SingleStockCap_LE_20pct",
+          "status": "SAT",
+          "passed": true
+        },
+        {
+          "clause": "SLA-4_ConservativeCost_GE_60bps_And_Deducted",
+          "status": "SAT",
+          "passed": true
+        },
+        {
+          "clause": "SLA-5_HardStop_Enforced_And_ZeroLookAhead",
+          "status": "SAT",
+          "passed": true
+        },
+        {
+          "clause": "SLA-6_OOS_NetProfit_Positive",
+          "status": "SAT",
+          "passed": true
+        },
+        {
+          "clause": "SLA-7_ProductionCandidate_FullCAGR_GT_0_And_OOSSharpe_GE_0.5",
+          "status": "SAT",
+          "passed": true
+        }
+      ],
+      "structural_sla_1_to_5": "SAT",
+      "oos_profit_sla_6": "SAT",
+      "production_candidate_sla_7": "SAT"
+    },
+    "Strategy_B_BB_Squeeze": {
+      "strategy": "Strategy_B_BB_Squeeze",
+      "observed_from_csv": {
+        "trading_days_checked": 1439,
+        "max_invested_weight": 0.9999989137967308,
+        "max_positions": 5,
+        "min_cash": 86.04515506699681,
+        "min_equity": 53361958.40286176,
+        "max_single_entry_weight": 0.19999824620474058,
+        "round_trip_cost": 0.007299999999999999,
+        "stop_loss_pct": 0.07,
+        "lookahead_max_diff": 0.0,
+        "full_net_cagr": -0.019432154359610876,
+        "oos_net_cagr": 0.058613072950492784,
+        "oos_net_sharpe": 0.34018018431029123
+      },
+      "clauses": [
+        {
+          "clause": "SLA-1_NoLeverage_TotalWeight_LE_100pct",
+          "status": "SAT",
+          "passed": true
+        },
+        {
+          "clause": "SLA-2_NoBankruptcy_Cash_GE_0_Equity_GT_0",
+          "status": "SAT",
+          "passed": true
+        },
+        {
+          "clause": "SLA-3_SingleStockCap_LE_20pct",
+          "status": "SAT",
+          "passed": true
+        },
+        {
+          "clause": "SLA-4_ConservativeCost_GE_60bps_And_Deducted",
+          "status": "SAT",
+          "passed": true
+        },
+        {
+          "clause": "SLA-5_HardStop_Enforced_And_ZeroLookAhead",
+          "status": "SAT",
+          "passed": true
+        },
+        {
+          "clause": "SLA-6_OOS_NetProfit_Positive",
+          "status": "SAT",
+          "passed": true
+        },
+        {
+          "clause": "SLA-7_ProductionCandidate_FullCAGR_GT_0_And_OOSSharpe_GE_0.5",
+          "status": "UNSAT",
+          "passed": false
+        }
+      ],
+      "structural_sla_1_to_5": "SAT",
+      "oos_profit_sla_6": "SAT",
+      "production_candidate_sla_7": "UNSAT"
+    },
+    "Strategy_C_Larry_VolBreakout": {
+      "strategy": "Strategy_C_Larry_VolBreakout",
+      "observed_from_csv": {
+        "trading_days_checked": 1439,
+        "max_invested_weight": 0.9950024617274676,
+        "max_positions": 5,
+        "min_cash": 161324.69848637097,
+        "min_equity": 1210280.1653106392,
+        "max_single_entry_weight": 0.1999990272359533,
+        "round_trip_cost": 0.007299999999999999,
+        "stop_loss_pct": 0.07,
+        "lookahead_max_diff": 0.0,
+        "full_net_cagr": -0.5379171398269675,
+        "oos_net_cagr": -0.48836056666431316,
+        "oos_net_sharpe": -3.744317641654295
+      },
+      "clauses": [
+        {
+          "clause": "SLA-1_NoLeverage_TotalWeight_LE_100pct",
+          "status": "SAT",
+          "passed": true
+        },
+        {
+          "clause": "SLA-2_NoBankruptcy_Cash_GE_0_Equity_GT_0",
+          "status": "SAT",
+          "passed": true
+        },
+        {
+          "clause": "SLA-3_SingleStockCap_LE_20pct",
+          "status": "SAT",
+          "passed": true
+        },
+        {
+          "clause": "SLA-4_ConservativeCost_GE_60bps_And_Deducted",
+          "status": "SAT",
+          "passed": true
+        },
+        {
+          "clause": "SLA-5_HardStop_Enforced_And_ZeroLookAhead",
+          "status": "SAT",
+          "passed": true
+        },
+        {
+          "clause": "SLA-6_OOS_NetProfit_Positive",
+          "status": "UNSAT",
+          "passed": false
+        },
+        {
+          "clause": "SLA-7_ProductionCandidate_FullCAGR_GT_0_And_OOSSharpe_GE_0.5",
+          "status": "UNSAT",
+          "passed": false
+        }
+      ],
+      "structural_sla_1_to_5": "SAT",
+      "oos_profit_sla_6": "UNSAT",
+      "production_candidate_sla_7": "UNSAT"
+    }
+  }
+}

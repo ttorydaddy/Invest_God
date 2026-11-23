@@ -1,0 +1,133 @@
+{
+  "cases": {
+    "R3_Strict5d": {
+      "case": "R3_Strict5d",
+      "structural_1_to_5": "SAT",
+      "oos_positive_6": "UNSAT",
+      "dominates_kospi_7": "UNSAT",
+      "clauses": [
+        {
+          "clause": "SLA-1_NoLeverage_Max3Pos",
+          "status": "SAT",
+          "passed": true
+        },
+        {
+          "clause": "SLA-2_NoBankruptcy",
+          "status": "SAT",
+          "passed": true
+        },
+        {
+          "clause": "SLA-3_SingleStockCap_LE_33.4pct",
+          "status": "SAT",
+          "passed": true
+        },
+        {
+          "clause": "SLA-4_ConservativeCost_0.73pct_Deducted",
+          "status": "SAT",
+          "passed": true
+        },
+        {
+          "clause": "SLA-5_HardStop4pct_And_ZeroLookAhead",
+          "status": "SAT",
+          "passed": true
+        },
+        {
+          "clause": "SLA-6_OOS_Positive",
+          "status": "UNSAT",
+          "passed": false
+        },
+        {
+          "clause": "SLA-7_Dominates_KOSPI_Full_And_OOS",
+          "status": "UNSAT",
+          "passed": false
+        }
+      ]
+    },
+    "R3_Force5d": {
+      "case": "R3_Force5d",
+      "structural_1_to_5": "SAT",
+      "oos_positive_6": "UNSAT",
+      "dominates_kospi_7": "UNSAT",
+      "clauses": [
+        {
+          "clause": "SLA-1_NoLeverage_Max3Pos",
+          "status": "SAT",
+          "passed": true
+        },
+        {
+          "clause": "SLA-2_NoBankruptcy",
+          "status": "SAT",
+          "passed": true
+        },
+        {
+          "clause": "SLA-3_SingleStockCap_LE_33.4pct",
+          "status": "SAT",
+          "passed": true
+        },
+        {
+          "clause": "SLA-4_ConservativeCost_0.73pct_Deducted",
+          "status": "SAT",
+          "passed": true
+        },
+        {
+          "clause": "SLA-5_HardStop4pct_And_ZeroLookAhead",
+          "status": "SAT",
+          "passed": true
+        },
+        {
+          "clause": "SLA-6_OOS_Positive",
+          "status": "UNSAT",
+          "passed": false
+        },
+        {
+          "clause": "SLA-7_Dominates_KOSPI_Full_And_OOS",
+          "status": "UNSAT",
+          "passed": false
+        }
+      ]
+    },
+    "R3_Regime": {
+      "case": "R3_Regime",
+      "structural_1_to_5": "SAT",
+      "oos_positive_6": "UNSAT",
+      "dominates_kospi_7": "UNSAT",
+      "clauses": [
+        {
+          "clause": "SLA-1_NoLeverage_Max3Pos",
+          "status": "SAT",
+          "passed": true
+        },
+        {
+          "clause": "SLA-2_NoBankruptcy",
+          "status": "SAT",
+          "passed": true
+        },
+        {
+          "clause": "SLA-3_SingleStockCap_LE_33.4pct",
+          "status": "SAT",
+          "passed": true
+        },
+        {
+          "clause": "SLA-4_ConservativeCost_0.73pct_Deducted",
+          "status": "SAT",
+          "passed": true
+        },
+        {
+          "clause": "SLA-5_HardStop4pct_And_ZeroLookAhead",
+          "status": "SAT",
+          "passed": true
+        },
+        {
+          "clause": "SLA-6_OOS_Positive",
+          "status": "UNSAT",
+          "passed": false
+        },
+        {
+          "clause": "SLA-7_Dominates_KOSPI_Full_And_OOS",
+          "status": "UNSAT",
+          "passed": false
+        }
+      ]
+    }
+  }
+}

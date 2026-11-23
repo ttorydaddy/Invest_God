@@ -1,0 +1,11 @@
+[Unit]
+Description=Run Invest_God Upbit Turbo-1 Bot every 4 hours (UTC 00:02, 04:02, 08:02, 12:02, 16:02, 20:02)
+
+[Timer]
+OnCalendar=*-*-* 00,04,08,12,16,20:02:00 UTC
+Persistent=true
+AccuracySec=15s
+Unit=invest-god-upbit.service
+
+[Install]
+WantedBy=timers.target

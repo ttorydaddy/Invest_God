@@ -1,0 +1,193 @@
+{
+  "verifier": "Z3 SMT Solver (Phase 1-B-3 Crypto Turbo Scaling SLA)",
+  "cases": {
+    "M3_R07": {
+      "daily_rows_verified": 2151,
+      "trade_rows_verified": 502,
+      "overall_all_8_sla": "SAT",
+      "clauses": [
+        {
+          "clause": "SLA-1_NoLeverage_Weight_LE_100pct",
+          "status": "SAT",
+          "passed": true
+        },
+        {
+          "clause": "SLA-2_NoBankruptcy_Cash_GE_0_Equity_GT_0",
+          "status": "SAT",
+          "passed": true
+        },
+        {
+          "clause": "SLA-3_SingleCoinCap_Respected",
+          "status": "SAT",
+          "passed": true
+        },
+        {
+          "clause": "SLA-4_ConservativeCost_GE_30bps_Deducted",
+          "status": "SAT",
+          "passed": true
+        },
+        {
+          "clause": "SLA-5_ZeroLookAhead_Perturbation_0",
+          "status": "SAT",
+          "passed": true
+        },
+        {
+          "clause": "SLA-6_OOS_NetProfit_Positive",
+          "status": "SAT",
+          "passed": true
+        },
+        {
+          "clause": "SLA-7_OOS_Beats_BTC_CAGR_Sharpe_MDD",
+          "status": "SAT",
+          "passed": true
+        },
+        {
+          "clause": "SLA-8_Full_And_OOS_Dominates_BTC_CAGR_Sharpe_MDD",
+          "status": "SAT",
+          "passed": true
+        }
+      ]
+    },
+    "M3_R15": {
+      "daily_rows_verified": 2151,
+      "trade_rows_verified": 497,
+      "overall_all_8_sla": "SAT",
+      "clauses": [
+        {
+          "clause": "SLA-1_NoLeverage_Weight_LE_100pct",
+          "status": "SAT",
+          "passed": true
+        },
+        {
+          "clause": "SLA-2_NoBankruptcy_Cash_GE_0_Equity_GT_0",
+          "status": "SAT",
+          "passed": true
+        },
+        {
+          "clause": "SLA-3_SingleCoinCap_Respected",
+          "status": "SAT",
+          "passed": true
+        },
+        {
+          "clause": "SLA-4_ConservativeCost_GE_30bps_Deducted",
+          "status": "SAT",
+          "passed": true
+        },
+        {
+          "clause": "SLA-5_ZeroLookAhead_Perturbation_0",
+          "status": "SAT",
+          "passed": true
+        },
+        {
+          "clause": "SLA-6_OOS_NetProfit_Positive",
+          "status": "SAT",
+          "passed": true
+        },
+        {
+          "clause": "SLA-7_OOS_Beats_BTC_CAGR_Sharpe_MDD",
+          "status": "SAT",
+          "passed": true
+        },
+        {
+          "clause": "SLA-8_Full_And_OOS_Dominates_BTC_CAGR_Sharpe_MDD",
+          "status": "SAT",
+          "passed": true
+        }
+      ]
+    },
+    "M3_R20": {
+      "daily_rows_verified": 2151,
+      "trade_rows_verified": 406,
+      "overall_all_8_sla": "SAT",
+      "clauses": [
+        {
+          "clause": "SLA-1_NoLeverage_Weight_LE_100pct",
+          "status": "SAT",
+          "passed": true
+        },
+        {
+          "clause": "SLA-2_NoBankruptcy_Cash_GE_0_Equity_GT_0",
+          "status": "SAT",
+          "passed": true
+        },
+        {
+          "clause": "SLA-3_SingleCoinCap_Respected",
+          "status": "SAT",
+          "passed": true
+        },
+        {
+          "clause": "SLA-4_ConservativeCost_GE_30bps_Deducted",
+          "status": "SAT",
+          "passed": true
+        },
+        {
+          "clause": "SLA-5_ZeroLookAhead_Perturbation_0",
+          "status": "SAT",
+          "passed": true
+        },
+        {
+          "clause": "SLA-6_OOS_NetProfit_Positive",
+          "status": "SAT",
+          "passed": true
+        },
+        {
+          "clause": "SLA-7_OOS_Beats_BTC_CAGR_Sharpe_MDD",
+          "status": "SAT",
+          "passed": true
+        },
+        {
+          "clause": "SLA-8_Full_And_OOS_Dominates_BTC_CAGR_Sharpe_MDD",
+          "status": "SAT",
+          "passed": true
+        }
+      ]
+    },
+    "M2_R15": {
+      "daily_rows_verified": 2151,
+      "trade_rows_verified": 599,
+      "overall_all_8_sla": "SAT",
+      "clauses": [
+        {
+          "clause": "SLA-1_NoLeverage_Weight_LE_100pct",
+          "status": "SAT",
+          "passed": true
+        },
+        {
+          "clause": "SLA-2_NoBankruptcy_Cash_GE_0_Equity_GT_0",
+          "status": "SAT",
+          "passed": true
+        },
+        {
+          "clause": "SLA-3_SingleCoinCap_Respected",
+          "status": "SAT",
+          "passed": true
+        },
+        {
+          "clause": "SLA-4_ConservativeCost_GE_30bps_Deducted",
+          "status": "SAT",
+          "passed": true
+        },
+        {
+          "clause": "SLA-5_ZeroLookAhead_Perturbation_0",
+          "status": "SAT",
+          "passed": true
+        },
+        {
+          "clause": "SLA-6_OOS_NetProfit_Positive",
+          "status": "SAT",
+          "passed": true
+        },
+        {
+          "clause": "SLA-7_OOS_Beats_BTC_CAGR_Sharpe_MDD",
+          "status": "SAT",
+          "passed": true
+        },
+        {
+          "clause": "SLA-8_Full_And_OOS_Dominates_BTC_CAGR_Sharpe_MDD",
+          "status": "SAT",
+          "passed": true
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,555 @@
+{
+  "meta": {
+    "bt_start": "2021-01-04",
+    "is_end": "2024-06-30",
+    "oos_start": "2024-07-01",
+    "bt_end": "2026-11-19",
+    "round_trip_cost": 0.007299999999999999,
+    "d4_is_selection": "IS Calmar 우위: D-1+D-3 (1.41) >= D-2+D-3 (-0.01)"
+  },
+  "benchmarks": {
+    "KOSPI": {
+      "full": {
+        "total_return": 0.7449405566136038,
+        "cagr_cal": 0.09943697661355966,
+        "cagr_252": 0.10240459537530966,
+        "sharpe": 0.48300068981325955,
+        "mdd": -0.4548847626118053
+      },
+      "is": {
+        "total_return": -0.049798734990941895,
+        "cagr_cal": -0.014572171612260654,
+        "cagr_252": -0.014890962509867323,
+        "sharpe": -0.0060228265828259605,
+        "mdd": -0.34785081259316275
+      },
+      "oos": {
+        "total_return": 0.8321405370186483,
+        "cagr_cal": 0.28905249458283055,
+        "cagr_252": 0.3003324849763773,
+        "sharpe": 0.8527141457499611,
+        "mdd": -0.4548847626118053
+      }
+    }
+  },
+  "cases": {
+    "BASE": {
+      "label": "SL8_CB 기준선 (단일 MA60 레짐)",
+      "net": {
+        "full": {
+          "total_return": 2.4858053414731107,
+          "cagr_cal": 0.2369245959909374,
+          "cagr_252": 0.2444257773873415,
+          "sharpe": 0.9157201922709426,
+          "mdd": -0.4169038253835893,
+          "calmar": 0.5682955673840251,
+          "mdd_peak_date": "2021-08-12",
+          "mdd_trough_date": "2023-01-30",
+          "num_trades": 362,
+          "win_rate": 0.3674033149171271,
+          "payoff_ratio": 2.6085522829770618,
+          "profit_factor": 1.515010714567466,
+          "avg_holding_days": 11.803867403314918,
+          "avg_exposure": 0.56532775250816,
+          "final_equity": 348580534.1473111
+        },
+        "is": {
+          "total_return": 0.42047512871801485,
+          "cagr_cal": 0.10612747744059048,
+          "cagr_252": 0.10858938978457644,
+          "sharpe": 0.5115345444356986,
+          "mdd": -0.4169038253835893,
+          "calmar": 0.254561054562029,
+          "mdd_peak_date": "2021-08-12",
+          "mdd_trough_date": "2023-01-30",
+          "num_trades": 220,
+          "win_rate": 0.32272727272727275,
+          "payoff_ratio": 2.6513600600945844,
+          "profit_factor": 1.2633997601792983,
+          "avg_holding_days": 12.381818181818181,
+          "avg_exposure": 0.6059876876019304,
+          "final_equity": 142047512.8718015
+        },
+        "oos": {
+          "total_return": 1.4505813739287317,
+          "cagr_cal": 0.45625787961266817,
+          "cagr_252": 0.4751616787275319,
+          "sharpe": 1.4764175816369072,
+          "mdd": -0.21309615742170018,
+          "calmar": 2.1410891924708455,
+          "mdd_peak_date": "2025-02-18",
+          "mdd_trough_date": "2025-04-30",
+          "num_trades": 142,
+          "win_rate": 0.43661971830985913,
+          "payoff_ratio": 2.502198751515955,
+          "profit_factor": 1.9392040324248643,
+          "avg_holding_days": 10.908450704225352,
+          "avg_exposure": 0.5052826160013526,
+          "final_equity": 348580534.1473111
+        },
+        "audit": {
+          "max_observed_total_weight": 0.9999998662909163,
+          "max_observed_single_entry_weight": 0.19999958416387978,
+          "min_observed_cash": 40.15836724638939,
+          "min_observed_equity": 90215538.26384644,
+          "stop_loss_pct": 0.08,
+          "round_trip_cost": 0.007299999999999999,
+          "throttled_days": 0,
+          "regime_forced_exits": 0
+        }
+      },
+      "gross": {
+        "full": {
+          "total_return": 4.7507269327,
+          "cagr_cal": 0.34699311750460393,
+          "cagr_252": 0.3584506694373977,
+          "sharpe": 1.2354004256568256,
+          "mdd": -0.3614306393651291,
+          "calmar": 0.9600545158930482,
+          "mdd_peak_date": "2021-08-12",
+          "mdd_trough_date": "2023-01-30",
+          "num_trades": 362,
+          "win_rate": 0.3867403314917127,
+          "payoff_ratio": 2.788785320841778,
+          "profit_factor": 1.7586934455758945,
+          "avg_holding_days": 11.803867403314918,
+          "avg_exposure": 0.5652244598616002,
+          "final_equity": 575072693.27
+        }
+      }
+    },
+    "D-1": {
+      "label": "이중 레짐 (지수>MA120 & MA20>MA60)",
+      "net": {
+        "full": {
+          "total_return": 2.9860110098432546,
+          "cagr_cal": 0.2654923575968635,
+          "cagr_252": 0.273993667383853,
+          "sharpe": 1.048414718777856,
+          "mdd": -0.30936318107286265,
+          "calmar": 0.8581899005438968,
+          "mdd_peak_date": "2024-04-12",
+          "mdd_trough_date": "2025-08-21",
+          "num_trades": 290,
+          "win_rate": 0.3758620689655172,
+          "payoff_ratio": 2.945133914991396,
+          "profit_factor": 1.7735889322323908,
+          "avg_holding_days": 11.810344827586206,
+          "avg_exposure": 0.45273771110665195,
+          "final_equity": 398601100.98432547
+        },
+        "is": {
+          "total_return": 1.6381774353882053,
+          "cagr_cal": 0.3215117709386317,
+          "cagr_252": 0.32965703835980475,
+          "sharpe": 1.2261364929905225,
+          "mdd": -0.23916047700440568,
+          "calmar": 1.3443348790975567,
+          "mdd_peak_date": "2021-08-12",
+          "mdd_trough_date": "2022-12-07",
+          "num_trades": 161,
+          "win_rate": 0.34782608695652173,
+          "payoff_ratio": 3.6894861861348844,
+          "profit_factor": 1.9677259659386042,
+          "avg_holding_days": 13.22360248447205,
+          "avg_exposure": 0.4729108553399723,
+          "final_equity": 263817743.5388205
+        },
+        "oos": {
+          "total_return": 0.5062320368880688,
+          "cagr_cal": 0.18740308741144052,
+          "cagr_252": 0.1944223577612303,
+          "sharpe": 0.7917607889846968,
+          "mdd": -0.2463009275146788,
+          "calmar": 0.7608704088224428,
+          "mdd_peak_date": "2024-07-01",
+          "mdd_trough_date": "2025-08-21",
+          "num_trades": 129,
+          "win_rate": 0.4108527131782946,
+          "payoff_ratio": 2.1932625724080905,
+          "profit_factor": 1.5295120570740628,
+          "avg_holding_days": 10.046511627906977,
+          "avg_exposure": 0.4229467339083924,
+          "final_equity": 398601100.98432547
+        },
+        "audit": {
+          "max_observed_total_weight": 0.9999992184613227,
+          "max_observed_single_entry_weight": 0.19999850152334966,
+          "min_observed_cash": 225.70716308802366,
+          "min_observed_equity": 91249931.20820796,
+          "stop_loss_pct": 0.08,
+          "round_trip_cost": 0.007299999999999999,
+          "throttled_days": 0,
+          "regime_forced_exits": 0
+        }
+      },
+      "gross": {
+        "full": {
+          "total_return": 4.942211114299999,
+          "cagr_cal": 0.3545269869014409,
+          "cagr_252": 0.3662652895841181,
+          "sharpe": 1.3227117031883275,
+          "mdd": -0.2462818883741068,
+          "calmar": 1.43951708849539,
+          "mdd_peak_date": "2024-04-12",
+          "mdd_trough_date": "2025-05-30",
+          "num_trades": 291,
+          "win_rate": 0.39862542955326463,
+          "payoff_ratio": 3.0839448826464664,
+          "profit_factor": 2.0442148936399414,
+          "avg_holding_days": 11.859106529209622,
+          "avg_exposure": 0.4559521820091499,
+          "final_equity": 594221111.43
+        }
+      }
+    },
+    "D-2": {
+      "label": "레짐 이탈 시 보유 종목 전량 현금화",
+      "net": {
+        "full": {
+          "total_return": 0.5720557169489964,
+          "cagr_cal": 0.08007647008251384,
+          "cagr_252": 0.08244485720629569,
+          "sharpe": 0.45123448448856884,
+          "mdd": -0.47544720261444795,
+          "calmar": 0.16842347508236336,
+          "mdd_peak_date": "2021-08-12",
+          "mdd_trough_date": "2025-04-29",
+          "num_trades": 421,
+          "win_rate": 0.3752969121140142,
+          "payoff_ratio": 2.0645347935664278,
+          "profit_factor": 1.2402908645760309,
+          "avg_holding_days": 8.46793349168646,
+          "avg_exposure": 0.4735866872655125,
+          "final_equity": 157205571.69489965
+        },
+        "is": {
+          "total_return": -0.09254018594545577,
+          "cagr_cal": -0.027519795148227333,
+          "cagr_252": -0.02811776778989583,
+          "sharpe": -0.012589679162224256,
+          "mdd": -0.43410433908040513,
+          "calmar": -0.06339442541976088,
+          "mdd_peak_date": "2021-08-12",
+          "mdd_trough_date": "2023-05-17",
+          "num_trades": 267,
+          "win_rate": 0.352059925093633,
+          "payoff_ratio": 1.8981475869430264,
+          "profit_factor": 1.0313634287436102,
+          "avg_holding_days": 8.340823970037453,
+          "avg_exposure": 0.4979442923259115,
+          "final_equity": 90745981.40545443
+        },
+        "oos": {
+          "total_return": 0.7053432922052956,
+          "cagr_cal": 0.25086160154490966,
+          "cagr_252": 0.2605059052395884,
+          "sharpe": 1.0389675158902074,
+          "mdd": -0.212988234028877,
+          "calmar": 1.1778190597650469,
+          "mdd_peak_date": "2026-02-19",
+          "mdd_trough_date": "2026-04-16",
+          "num_trades": 154,
+          "win_rate": 0.4155844155844156,
+          "payoff_ratio": 2.2507415031479705,
+          "profit_factor": 1.6005272911274449,
+          "avg_holding_days": 8.688311688311689,
+          "avg_exposure": 0.4376162481229613,
+          "final_equity": 157205571.69489965
+        },
+        "audit": {
+          "max_observed_total_weight": 0.9999896859594578,
+          "max_observed_single_entry_weight": 0.19999733799294045,
+          "min_observed_cash": 1084.6114574130625,
+          "min_observed_equity": 74833740.51550741,
+          "stop_loss_pct": 0.08,
+          "round_trip_cost": 0.007299999999999999,
+          "throttled_days": 0,
+          "regime_forced_exits": 170
+        }
+      },
+      "gross": {
+        "full": {
+          "total_return": 1.8447066368000007,
+          "cagr_cal": 0.19484996753562545,
+          "cagr_252": 0.20091363718497934,
+          "sharpe": 0.88723721731476,
+          "mdd": -0.34441583127015385,
+          "calmar": 0.5657404504811757,
+          "mdd_peak_date": "2021-11-22",
+          "mdd_trough_date": "2023-05-12",
+          "num_trades": 424,
+          "win_rate": 0.41745283018867924,
+          "payoff_ratio": 2.084638015696916,
+          "profit_factor": 1.4938499140824046,
+          "avg_holding_days": 8.533018867924529,
+          "avg_exposure": 0.48054952299936926,
+          "final_equity": 284470663.68000007
+        }
+      }
+    },
+    "D-2H": {
+      "label": "레짐 이탈 시 보유 종목 50% 축소",
+      "net": {
+        "full": {
+          "total_return": 2.3937164606916057,
+          "cagr_cal": 0.23129831471721385,
+          "cagr_252": 0.23860480011158325,
+          "sharpe": 0.9584591971226997,
+          "mdd": -0.33888928230391857,
+          "calmar": 0.6825188248644102,
+          "mdd_peak_date": "2021-08-12",
+          "mdd_trough_date": "2023-01-30",
+          "num_trades": 501,
+          "win_rate": 0.41317365269461076,
+          "payoff_ratio": 2.5603626724985378,
+          "profit_factor": 1.8027043306367265,
+          "avg_holding_days": 10.313373253493014,
+          "avg_exposure": 0.500589008443483,
+          "final_equity": 339371646.0691606
+        },
+        "is": {
+          "total_return": 0.62022079749923,
+          "cagr_cal": 0.14875069921889117,
+          "cagr_252": 0.15226736633814464,
+          "sharpe": 0.6899151729836259,
+          "mdd": -0.33888928230391857,
+          "calmar": 0.438935979938989,
+          "mdd_peak_date": "2021-08-12",
+          "mdd_trough_date": "2023-01-30",
+          "num_trades": 319,
+          "win_rate": 0.3761755485893417,
+          "payoff_ratio": 2.7359540155797526,
+          "profit_factor": 1.6498215169325143,
+          "avg_holding_days": 10.620689655172415,
+          "avg_exposure": 0.5272589094553339,
+          "final_equity": 162022079.749923
+        },
+        "oos": {
+          "total_return": 1.0712498519196294,
+          "cagr_cal": 0.3570963956029922,
+          "cagr_252": 0.371390321593444,
+          "sharpe": 1.3134276876447757,
+          "mdd": -0.23156823863150067,
+          "calmar": 1.5420784720448952,
+          "mdd_peak_date": "2025-02-18",
+          "mdd_trough_date": "2025-04-30",
+          "num_trades": 182,
+          "win_rate": 0.47802197802197804,
+          "payoff_ratio": 2.2656696418928006,
+          "profit_factor": 2.074876408891301,
+          "avg_holding_days": 9.774725274725276,
+          "avg_exposure": 0.4612038534208183,
+          "final_equity": 339371646.0691606
+        },
+        "audit": {
+          "max_observed_total_weight": 0.9999949875050942,
+          "max_observed_single_entry_weight": 0.19999977851720044,
+          "min_observed_cash": 1089.2506949715316,
+          "min_observed_equity": 90324270.31795694,
+          "stop_loss_pct": 0.08,
+          "round_trip_cost": 0.007299999999999999,
+          "throttled_days": 0,
+          "regime_forced_exits": 138
+        }
+      },
+      "gross": {
+        "full": {
+          "total_return": 4.864641130700001,
+          "cagr_cal": 0.35149965083948254,
+          "cagr_252": 0.3631249904764897,
+          "sharpe": 1.3357102763300446,
+          "mdd": -0.27451932939476187,
+          "calmar": 1.2804185833268669,
+          "mdd_peak_date": "2021-08-12",
+          "mdd_trough_date": "2023-01-30",
+          "num_trades": 503,
+          "win_rate": 0.44930417495029823,
+          "payoff_ratio": 2.623557803185033,
+          "profit_factor": 2.140520084909086,
+          "avg_holding_days": 10.330019880715707,
+          "avg_exposure": 0.5013646095310116,
+          "final_equity": 586464113.07
+        }
+      }
+    },
+    "D-3": {
+      "label": "계좌 낙폭 연동 포지션 절반 감속 (-15%->10%)",
+      "net": {
+        "full": {
+          "total_return": 2.2446314804657783,
+          "cagr_cal": 0.22191528514624648,
+          "cagr_252": 0.22889875723534092,
+          "sharpe": 1.0021272844245792,
+          "mdd": -0.30813562457467447,
+          "calmar": 0.7201870457288423,
+          "mdd_peak_date": "2021-08-12",
+          "mdd_trough_date": "2023-01-30",
+          "num_trades": 363,
+          "win_rate": 0.36639118457300274,
+          "payoff_ratio": 2.6057504792054935,
+          "profit_factor": 1.5068035379753524,
+          "avg_holding_days": 11.790633608815426,
+          "avg_exposure": 0.42490840231439364,
+          "final_equity": 324463148.0465778
+        },
+        "is": {
+          "total_return": 0.4699723196985668,
+          "cagr_cal": 0.11706897937201277,
+          "cagr_252": 0.11979816725409487,
+          "sharpe": 0.6452725137976937,
+          "mdd": -0.30813562457467447,
+          "calmar": 0.3799267920858075,
+          "mdd_peak_date": "2021-08-12",
+          "mdd_trough_date": "2023-01-30",
+          "num_trades": 221,
+          "win_rate": 0.3212669683257919,
+          "payoff_ratio": 2.6461921102020773,
+          "profit_factor": 1.2525309321623168,
+          "avg_holding_days": 12.357466063348417,
+          "avg_exposure": 0.42824146295275317,
+          "final_equity": 146997231.96985668
+        },
+        "oos": {
+          "total_return": 1.2018283625905846,
+          "cagr_cal": 0.39233817101559576,
+          "cagr_252": 0.40824158290589097,
+          "sharpe": 1.4316197802444381,
+          "mdd": -0.14996745353184315,
+          "calmar": 2.61615545090448,
+          "mdd_peak_date": "2026-02-19",
+          "mdd_trough_date": "2026-03-16",
+          "num_trades": 142,
+          "win_rate": 0.43661971830985913,
+          "payoff_ratio": 2.502198751515955,
+          "profit_factor": 1.939204032424864,
+          "avg_holding_days": 10.908450704225352,
+          "avg_exposure": 0.4199862576883823,
+          "final_equity": 324463148.0465778
+        },
+        "audit": {
+          "max_observed_total_weight": 0.9999990870654454,
+          "max_observed_single_entry_weight": 0.19999831736487025,
+          "min_observed_cash": 237.50599311292171,
+          "min_observed_equity": 90215538.26384644,
+          "stop_loss_pct": 0.08,
+          "round_trip_cost": 0.007299999999999999,
+          "throttled_days": 775,
+          "regime_forced_exits": 0
+        }
+      },
+      "gross": {
+        "full": {
+          "total_return": 3.1158672057000008,
+          "cagr_cal": 0.2724194748489317,
+          "cagr_252": 0.2811661720202767,
+          "sharpe": 1.1431862844698448,
+          "mdd": -0.28012709930751367,
+          "calmar": 0.9724852594496014,
+          "mdd_peak_date": "2021-08-12",
+          "mdd_trough_date": "2023-01-30",
+          "num_trades": 363,
+          "win_rate": 0.3856749311294766,
+          "payoff_ratio": 2.7858527767146466,
+          "profit_factor": 1.748965868789463,
+          "avg_holding_days": 11.790633608815426,
+          "avg_exposure": 0.4623293109227883,
+          "final_equity": 411586720.57000005
+        }
+      }
+    },
+    "D-4": {
+      "label": "복합방어 (IS선정: D-1 이중레짐 + D-3 낙폭감속)",
+      "net": {
+        "full": {
+          "total_return": 2.344073486236682,
+          "cagr_cal": 0.22821257254506633,
+          "cagr_252": 0.23541259755151422,
+          "sharpe": 1.0244481571795192,
+          "mdd": -0.22624781640728642,
+          "calmar": 1.0086840888410742,
+          "mdd_peak_date": "2024-04-12",
+          "mdd_trough_date": "2025-05-30",
+          "num_trades": 290,
+          "win_rate": 0.3793103448275862,
+          "payoff_ratio": 2.910973634599447,
+          "profit_factor": 1.7789283322552203,
+          "avg_holding_days": 11.875862068965517,
+          "avg_exposure": 0.3771793422013912,
+          "final_equity": 334407348.6236682
+        },
+        "is": {
+          "total_return": 1.2323637332502715,
+          "cagr_cal": 0.2595787791383535,
+          "cagr_252": 0.26600220853276246,
+          "sharpe": 1.1335979937544072,
+          "mdd": -0.1839751645321379,
+          "calmar": 1.4109446772257603,
+          "mdd_peak_date": "2023-04-06",
+          "mdd_trough_date": "2023-05-17",
+          "num_trades": 161,
+          "win_rate": 0.34782608695652173,
+          "payoff_ratio": 3.6894861861348844,
+          "profit_factor": 1.9677259659386042,
+          "avg_holding_days": 13.22360248447205,
+          "avg_exposure": 0.4064632134547695,
+          "final_equity": 223236373.32502717
+        },
+        "oos": {
+          "total_return": 0.49317058081035614,
+          "cagr_cal": 0.18307429284512122,
+          "cagr_252": 0.18991884012144045,
+          "sharpe": 0.8590800276777792,
+          "mdd": -0.15971671979719482,
+          "calmar": 1.1462437563054475,
+          "mdd_peak_date": "2024-07-01",
+          "mdd_trough_date": "2025-05-30",
+          "num_trades": 129,
+          "win_rate": 0.4186046511627907,
+          "payoff_ratio": 2.1409579523873834,
+          "profit_factor": 1.5414897257189162,
+          "avg_holding_days": 10.193798449612403,
+          "avg_exposure": 0.33393396950707366,
+          "final_equity": 334407348.6236682
+        },
+        "audit": {
+          "max_observed_total_weight": 0.9999990990378247,
+          "max_observed_single_entry_weight": 0.19999831736487025,
+          "min_observed_cash": 270.03384237736464,
+          "min_observed_equity": 91249931.20820796,
+          "stop_loss_pct": 0.08,
+          "round_trip_cost": 0.007299999999999999,
+          "throttled_days": 684,
+          "regime_forced_exits": 0
+        }
+      },
+      "gross": {
+        "full": {
+          "total_return": 3.8702129457999996,
+          "cagr_cal": 0.30940945554502,
+          "cagr_252": 0.31948514623736535,
+          "sharpe": 1.2894377345041153,
+          "mdd": -0.20239293066572173,
+          "calmar": 1.5287562392979523,
+          "mdd_peak_date": "2024-04-12",
+          "mdd_trough_date": "2025-05-30",
+          "num_trades": 291,
+          "win_rate": 0.39862542955326463,
+          "payoff_ratio": 3.0839448826464664,
+          "profit_factor": 2.0442148936399414,
+          "avg_holding_days": 11.859106529209622,
+          "avg_exposure": 0.39247973829455474,
+          "final_equity": 487021294.58
+        }
+      }
+    }
+  },
+  "lookahead_perturbation_max_diff": {
+    "BASE": 0.0,
+    "D-1": 0.0,
+    "D-2": 0.0,
+    "D-2H": 0.0,
+    "D-3": 0.0,
+    "D-4": 0.0
+  }
+}

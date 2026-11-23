@@ -1,0 +1,361 @@
+{
+  "variants": {
+    "A-0": {
+      "variant": "A-0",
+      "label": "Baseline (Phase 1-A 전략 A)",
+      "trading_days_checked": 1439,
+      "clauses": [
+        {
+          "clause": "SLA-1_NoLeverage_Weight_LE_100pct",
+          "status": "SAT",
+          "passed": true
+        },
+        {
+          "clause": "SLA-2_NoBankruptcy_Cash_GE_0_Equity_GT_0",
+          "status": "SAT",
+          "passed": true
+        },
+        {
+          "clause": "SLA-3_SingleStockCap_LE_20pct",
+          "status": "SAT",
+          "passed": true
+        },
+        {
+          "clause": "SLA-4_ConservativeCost_GE_60bps_Deducted",
+          "status": "SAT",
+          "passed": true
+        },
+        {
+          "clause": "SLA-5_HardStop_And_ZeroLookAhead",
+          "status": "SAT",
+          "passed": true
+        },
+        {
+          "clause": "SLA-6_OOS_NetProfit_Positive",
+          "status": "SAT",
+          "passed": true
+        },
+        {
+          "clause": "SLA-7_OOS_Beats_KOSPI_Sharpe_And_MDD",
+          "status": "SAT",
+          "passed": true
+        },
+        {
+          "clause": "SLA-8_Full_And_OOS_Dominates_KOSPI_CAGR_Sharpe_MDD",
+          "status": "UNSAT",
+          "passed": false
+        }
+      ],
+      "structural_1_to_5": "SAT",
+      "oos_positive_6": "SAT",
+      "beats_kospi_oos_7": "SAT",
+      "dominates_kospi_all_8": "UNSAT"
+    },
+    "A-1": {
+      "variant": "A-1",
+      "label": "A-0 + 외인·기관 확정 수급",
+      "trading_days_checked": 1439,
+      "clauses": [
+        {
+          "clause": "SLA-1_NoLeverage_Weight_LE_100pct",
+          "status": "SAT",
+          "passed": true
+        },
+        {
+          "clause": "SLA-2_NoBankruptcy_Cash_GE_0_Equity_GT_0",
+          "status": "SAT",
+          "passed": true
+        },
+        {
+          "clause": "SLA-3_SingleStockCap_LE_20pct",
+          "status": "SAT",
+          "passed": true
+        },
+        {
+          "clause": "SLA-4_ConservativeCost_GE_60bps_Deducted",
+          "status": "SAT",
+          "passed": true
+        },
+        {
+          "clause": "SLA-5_HardStop_And_ZeroLookAhead",
+          "status": "SAT",
+          "passed": true
+        },
+        {
+          "clause": "SLA-6_OOS_NetProfit_Positive",
+          "status": "SAT",
+          "passed": true
+        },
+        {
+          "clause": "SLA-7_OOS_Beats_KOSPI_Sharpe_And_MDD",
+          "status": "SAT",
+          "passed": true
+        },
+        {
+          "clause": "SLA-8_Full_And_OOS_Dominates_KOSPI_CAGR_Sharpe_MDD",
+          "status": "UNSAT",
+          "passed": false
+        }
+      ],
+      "structural_1_to_5": "SAT",
+      "oos_positive_6": "SAT",
+      "beats_kospi_oos_7": "SAT",
+      "dominates_kospi_all_8": "UNSAT"
+    },
+    "A-2": {
+      "variant": "A-2",
+      "label": "A-1 + 이정윤 주도주(Top30신규+RS)",
+      "trading_days_checked": 1439,
+      "clauses": [
+        {
+          "clause": "SLA-1_NoLeverage_Weight_LE_100pct",
+          "status": "SAT",
+          "passed": true
+        },
+        {
+          "clause": "SLA-2_NoBankruptcy_Cash_GE_0_Equity_GT_0",
+          "status": "SAT",
+          "passed": true
+        },
+        {
+          "clause": "SLA-3_SingleStockCap_LE_20pct",
+          "status": "SAT",
+          "passed": true
+        },
+        {
+          "clause": "SLA-4_ConservativeCost_GE_60bps_Deducted",
+          "status": "SAT",
+          "passed": true
+        },
+        {
+          "clause": "SLA-5_HardStop_And_ZeroLookAhead",
+          "status": "SAT",
+          "passed": true
+        },
+        {
+          "clause": "SLA-6_OOS_NetProfit_Positive",
+          "status": "SAT",
+          "passed": true
+        },
+        {
+          "clause": "SLA-7_OOS_Beats_KOSPI_Sharpe_And_MDD",
+          "status": "UNSAT",
+          "passed": false
+        },
+        {
+          "clause": "SLA-8_Full_And_OOS_Dominates_KOSPI_CAGR_Sharpe_MDD",
+          "status": "UNSAT",
+          "passed": false
+        }
+      ],
+      "structural_1_to_5": "SAT",
+      "oos_positive_6": "SAT",
+      "beats_kospi_oos_7": "UNSAT",
+      "dominates_kospi_all_8": "UNSAT"
+    },
+    "A-3": {
+      "variant": "A-3",
+      "label": "A-2 + 레짐필터 & 회전율완화",
+      "trading_days_checked": 1439,
+      "clauses": [
+        {
+          "clause": "SLA-1_NoLeverage_Weight_LE_100pct",
+          "status": "SAT",
+          "passed": true
+        },
+        {
+          "clause": "SLA-2_NoBankruptcy_Cash_GE_0_Equity_GT_0",
+          "status": "SAT",
+          "passed": true
+        },
+        {
+          "clause": "SLA-3_SingleStockCap_LE_20pct",
+          "status": "SAT",
+          "passed": true
+        },
+        {
+          "clause": "SLA-4_ConservativeCost_GE_60bps_Deducted",
+          "status": "SAT",
+          "passed": true
+        },
+        {
+          "clause": "SLA-5_HardStop_And_ZeroLookAhead",
+          "status": "SAT",
+          "passed": true
+        },
+        {
+          "clause": "SLA-6_OOS_NetProfit_Positive",
+          "status": "SAT",
+          "passed": true
+        },
+        {
+          "clause": "SLA-7_OOS_Beats_KOSPI_Sharpe_And_MDD",
+          "status": "UNSAT",
+          "passed": false
+        },
+        {
+          "clause": "SLA-8_Full_And_OOS_Dominates_KOSPI_CAGR_Sharpe_MDD",
+          "status": "UNSAT",
+          "passed": false
+        }
+      ],
+      "structural_1_to_5": "SAT",
+      "oos_positive_6": "SAT",
+      "beats_kospi_oos_7": "UNSAT",
+      "dominates_kospi_all_8": "UNSAT"
+    },
+    "A-R": {
+      "variant": "A-R",
+      "label": "A-0 + 레짐필터 & 회전율완화 (수급/주도주 제외)",
+      "trading_days_checked": 1439,
+      "clauses": [
+        {
+          "clause": "SLA-1_NoLeverage_Weight_LE_100pct",
+          "status": "SAT",
+          "passed": true
+        },
+        {
+          "clause": "SLA-2_NoBankruptcy_Cash_GE_0_Equity_GT_0",
+          "status": "SAT",
+          "passed": true
+        },
+        {
+          "clause": "SLA-3_SingleStockCap_LE_20pct",
+          "status": "SAT",
+          "passed": true
+        },
+        {
+          "clause": "SLA-4_ConservativeCost_GE_60bps_Deducted",
+          "status": "SAT",
+          "passed": true
+        },
+        {
+          "clause": "SLA-5_HardStop_And_ZeroLookAhead",
+          "status": "SAT",
+          "passed": true
+        },
+        {
+          "clause": "SLA-6_OOS_NetProfit_Positive",
+          "status": "SAT",
+          "passed": true
+        },
+        {
+          "clause": "SLA-7_OOS_Beats_KOSPI_Sharpe_And_MDD",
+          "status": "SAT",
+          "passed": true
+        },
+        {
+          "clause": "SLA-8_Full_And_OOS_Dominates_KOSPI_CAGR_Sharpe_MDD",
+          "status": "UNSAT",
+          "passed": false
+        }
+      ],
+      "structural_1_to_5": "SAT",
+      "oos_positive_6": "SAT",
+      "beats_kospi_oos_7": "SAT",
+      "dominates_kospi_all_8": "UNSAT"
+    },
+    "A-FR": {
+      "variant": "A-FR",
+      "label": "A-0 + 외인·기관 수급 + 레짐/회전율 (주도주 제외)",
+      "trading_days_checked": 1439,
+      "clauses": [
+        {
+          "clause": "SLA-1_NoLeverage_Weight_LE_100pct",
+          "status": "SAT",
+          "passed": true
+        },
+        {
+          "clause": "SLA-2_NoBankruptcy_Cash_GE_0_Equity_GT_0",
+          "status": "SAT",
+          "passed": true
+        },
+        {
+          "clause": "SLA-3_SingleStockCap_LE_20pct",
+          "status": "SAT",
+          "passed": true
+        },
+        {
+          "clause": "SLA-4_ConservativeCost_GE_60bps_Deducted",
+          "status": "SAT",
+          "passed": true
+        },
+        {
+          "clause": "SLA-5_HardStop_And_ZeroLookAhead",
+          "status": "SAT",
+          "passed": true
+        },
+        {
+          "clause": "SLA-6_OOS_NetProfit_Positive",
+          "status": "SAT",
+          "passed": true
+        },
+        {
+          "clause": "SLA-7_OOS_Beats_KOSPI_Sharpe_And_MDD",
+          "status": "SAT",
+          "passed": true
+        },
+        {
+          "clause": "SLA-8_Full_And_OOS_Dominates_KOSPI_CAGR_Sharpe_MDD",
+          "status": "SAT",
+          "passed": true
+        }
+      ],
+      "structural_1_to_5": "SAT",
+      "oos_positive_6": "SAT",
+      "beats_kospi_oos_7": "SAT",
+      "dominates_kospi_all_8": "SAT"
+    },
+    "A-LR": {
+      "variant": "A-LR",
+      "label": "A-0 + 이정윤 주도주 + 레짐/회전율 (수급 제외)",
+      "trading_days_checked": 1439,
+      "clauses": [
+        {
+          "clause": "SLA-1_NoLeverage_Weight_LE_100pct",
+          "status": "SAT",
+          "passed": true
+        },
+        {
+          "clause": "SLA-2_NoBankruptcy_Cash_GE_0_Equity_GT_0",
+          "status": "SAT",
+          "passed": true
+        },
+        {
+          "clause": "SLA-3_SingleStockCap_LE_20pct",
+          "status": "SAT",
+          "passed": true
+        },
+        {
+          "clause": "SLA-4_ConservativeCost_GE_60bps_Deducted",
+          "status": "SAT",
+          "passed": true
+        },
+        {
+          "clause": "SLA-5_HardStop_And_ZeroLookAhead",
+          "status": "SAT",
+          "passed": true
+        },
+        {
+          "clause": "SLA-6_OOS_NetProfit_Positive",
+          "status": "UNSAT",
+          "passed": false
+        },
+        {
+          "clause": "SLA-7_OOS_Beats_KOSPI_Sharpe_And_MDD",
+          "status": "UNSAT",
+          "passed": false
+        },
+        {
+          "clause": "SLA-8_Full_And_OOS_Dominates_KOSPI_CAGR_Sharpe_MDD",
+          "status": "UNSAT",
+          "passed": false
+        }
+      ],
+      "structural_1_to_5": "SAT",
+      "oos_positive_6": "UNSAT",
+      "beats_kospi_oos_7": "UNSAT",
+      "dominates_kospi_all_8": "UNSAT"
+    }
+  }
+}

@@ -1,0 +1,7 @@
+requests>=2.31.0
+pandas>=2.1.0
+numpy>=1.26.0
+yfinance>=0.2.40
+PyJWT>=2.8.0
+PyYAML>=6.0.1
+z3-solver>=4.12.6

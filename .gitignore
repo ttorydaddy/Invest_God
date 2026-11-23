@@ -1,0 +1,46 @@
+# Invest_God — Git Ignore Rules (Cloud 24/7 Safe Mode)
+
+# 1. Large local DuckDB databases (never push to GitHub)
+*.duckdb
+*.duckdb.wal
+*.duckdb.tmp
+
+# 2. Secrets & Credentials (strictly excluded)
+.env
+.env.*
+*secret*
+*key*.json
+*.pem
+*.p12
+
+# 3. Python caches & virtual environments
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+venv/
+.venv/
+env/
+
+# 4. OS & Editor temporary files
+.DS_Store
+Thumbs.db
+desktop.ini
+*.swp
+*.swo
+.vscode/
+.idea/
+
+# 5. Runtime local logs
+live/logs/*.log
+
+# 6. Explicitly track cloud paper-trading state & GitHub Pages dashboard
+!live/state/
+!live/state/*.json
+!live/state/*.csv
+!live/output/
+!live/output/*.html
+!live/output/*.json
+!docs/
+!docs/index.html
+!docs/.nojekyll

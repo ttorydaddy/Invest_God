@@ -1,0 +1,170 @@
+{
+  "verifier": "Z3 SMT Solver (Phase 1-B Crypto Short-Term SLA)",
+  "strategies": {
+    "C1_VolBreakout": {
+      "strategy_code": "C1_VolBreakout",
+      "daily_rows_verified": 2151,
+      "trade_rows_verified": 1853,
+      "structural_sla_1_to_6": "SAT",
+      "oos_sla_7_to_8": "UNSAT",
+      "overall_all_9_sla": "UNSAT",
+      "clauses": [
+        {
+          "clause": "SLA-1_NoLeverage_Weight_LE_100pct",
+          "status": "SAT",
+          "passed": true
+        },
+        {
+          "clause": "SLA-2_NoBankruptcy_Cash_GE_0_Equity_GT_0",
+          "status": "SAT",
+          "passed": true
+        },
+        {
+          "clause": "SLA-3_SingleCoinCap_LE_25pct",
+          "status": "SAT",
+          "passed": true
+        },
+        {
+          "clause": "SLA-4_TightHardStop_2pct_to_3pct",
+          "status": "SAT",
+          "passed": true
+        },
+        {
+          "clause": "SLA-5_ConservativeCost_GE_30bps_Deducted",
+          "status": "SAT",
+          "passed": true
+        },
+        {
+          "clause": "SLA-6_ZeroLookAhead_Perturbation_0",
+          "status": "SAT",
+          "passed": true
+        },
+        {
+          "clause": "SLA-7_OOS_NetProfit_Positive",
+          "status": "UNSAT",
+          "passed": false
+        },
+        {
+          "clause": "SLA-8_OOS_Beats_BTC_Sharpe_And_MDD",
+          "status": "UNSAT",
+          "passed": false
+        },
+        {
+          "clause": "SLA-9_Full_NetProfit_And_Beats_BTC_Sharpe_MDD",
+          "status": "UNSAT",
+          "passed": false
+        }
+      ]
+    },
+    "C2_DonchianVol": {
+      "strategy_code": "C2_DonchianVol",
+      "daily_rows_verified": 2151,
+      "trade_rows_verified": 1268,
+      "structural_sla_1_to_6": "SAT",
+      "oos_sla_7_to_8": "SAT",
+      "overall_all_9_sla": "UNSAT",
+      "clauses": [
+        {
+          "clause": "SLA-1_NoLeverage_Weight_LE_100pct",
+          "status": "SAT",
+          "passed": true
+        },
+        {
+          "clause": "SLA-2_NoBankruptcy_Cash_GE_0_Equity_GT_0",
+          "status": "SAT",
+          "passed": true
+        },
+        {
+          "clause": "SLA-3_SingleCoinCap_LE_25pct",
+          "status": "SAT",
+          "passed": true
+        },
+        {
+          "clause": "SLA-4_TightHardStop_2pct_to_3pct",
+          "status": "SAT",
+          "passed": true
+        },
+        {
+          "clause": "SLA-5_ConservativeCost_GE_30bps_Deducted",
+          "status": "SAT",
+          "passed": true
+        },
+        {
+          "clause": "SLA-6_ZeroLookAhead_Perturbation_0",
+          "status": "SAT",
+          "passed": true
+        },
+        {
+          "clause": "SLA-7_OOS_NetProfit_Positive",
+          "status": "SAT",
+          "passed": true
+        },
+        {
+          "clause": "SLA-8_OOS_Beats_BTC_Sharpe_And_MDD",
+          "status": "SAT",
+          "passed": true
+        },
+        {
+          "clause": "SLA-9_Full_NetProfit_And_Beats_BTC_Sharpe_MDD",
+          "status": "UNSAT",
+          "passed": false
+        }
+      ]
+    },
+    "C3_UptrendMeanRev": {
+      "strategy_code": "C3_UptrendMeanRev",
+      "daily_rows_verified": 2151,
+      "trade_rows_verified": 191,
+      "structural_sla_1_to_6": "SAT",
+      "oos_sla_7_to_8": "UNSAT",
+      "overall_all_9_sla": "UNSAT",
+      "clauses": [
+        {
+          "clause": "SLA-1_NoLeverage_Weight_LE_100pct",
+          "status": "SAT",
+          "passed": true
+        },
+        {
+          "clause": "SLA-2_NoBankruptcy_Cash_GE_0_Equity_GT_0",
+          "status": "SAT",
+          "passed": true
+        },
+        {
+          "clause": "SLA-3_SingleCoinCap_LE_25pct",
+          "status": "SAT",
+          "passed": true
+        },
+        {
+          "clause": "SLA-4_TightHardStop_2pct_to_3pct",
+          "status": "SAT",
+          "passed": true
+        },
+        {
+          "clause": "SLA-5_ConservativeCost_GE_30bps_Deducted",
+          "status": "SAT",
+          "passed": true
+        },
+        {
+          "clause": "SLA-6_ZeroLookAhead_Perturbation_0",
+          "status": "SAT",
+          "passed": true
+        },
+        {
+          "clause": "SLA-7_OOS_NetProfit_Positive",
+          "status": "UNSAT",
+          "passed": false
+        },
+        {
+          "clause": "SLA-8_OOS_Beats_BTC_Sharpe_And_MDD",
+          "status": "UNSAT",
+          "passed": false
+        },
+        {
+          "clause": "SLA-9_Full_NetProfit_And_Beats_BTC_Sharpe_MDD",
+          "status": "UNSAT",
+          "passed": false
+        }
+      ]
+    }
+  }
+}

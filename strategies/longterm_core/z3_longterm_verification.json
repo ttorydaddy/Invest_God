@@ -1,0 +1,118 @@
+{
+  "strategies": {
+    "L-1_DualMomentum": {
+      "strategy": "L-1_DualMomentum",
+      "structural_1_to_4": "SAT",
+      "oos_positive_5": "SAT",
+      "beats_benchmarks_6": "SAT",
+      "clauses": [
+        {
+          "clause": "SLA-1_NoLeverage_Weight_LE_100pct",
+          "status": "SAT",
+          "passed": true
+        },
+        {
+          "clause": "SLA-2_NoBankruptcy_Cash_GE_0_Equity_GT_0",
+          "status": "SAT",
+          "passed": true
+        },
+        {
+          "clause": "SLA-3_ConservativeCost_Deducted",
+          "status": "SAT",
+          "passed": true
+        },
+        {
+          "clause": "SLA-4_ZeroLookAhead",
+          "status": "SAT",
+          "passed": true
+        },
+        {
+          "clause": "SLA-5_OOS_NetProfit_Positive",
+          "status": "SAT",
+          "passed": true
+        },
+        {
+          "clause": "SLA-6_Beats_KOSPI_And_6040_RiskAdjusted",
+          "status": "SAT",
+          "passed": true
+        }
+      ]
+    },
+    "L-2_RiskParity_Trend": {
+      "strategy": "L-2_RiskParity_Trend",
+      "structural_1_to_4": "SAT",
+      "oos_positive_5": "SAT",
+      "beats_benchmarks_6": "SAT",
+      "clauses": [
+        {
+          "clause": "SLA-1_NoLeverage_Weight_LE_100pct",
+          "status": "SAT",
+          "passed": true
+        },
+        {
+          "clause": "SLA-2_NoBankruptcy_Cash_GE_0_Equity_GT_0",
+          "status": "SAT",
+          "passed": true
+        },
+        {
+          "clause": "SLA-3_ConservativeCost_Deducted",
+          "status": "SAT",
+          "passed": true
+        },
+        {
+          "clause": "SLA-4_ZeroLookAhead",
+          "status": "SAT",
+          "passed": true
+        },
+        {
+          "clause": "SLA-5_OOS_NetProfit_Positive",
+          "status": "SAT",
+          "passed": true
+        },
+        {
+          "clause": "SLA-6_Beats_KOSPI_And_6040_RiskAdjusted",
+          "status": "SAT",
+          "passed": true
+        }
+      ]
+    },
+    "L-3_Barbell_Regime": {
+      "strategy": "L-3_Barbell_Regime",
+      "structural_1_to_4": "SAT",
+      "oos_positive_5": "SAT",
+      "beats_benchmarks_6": "SAT",
+      "clauses": [
+        {
+          "clause": "SLA-1_NoLeverage_Weight_LE_100pct",
+          "status": "SAT",
+          "passed": true
+        },
+        {
+          "clause": "SLA-2_NoBankruptcy_Cash_GE_0_Equity_GT_0",
+          "status": "SAT",
+          "passed": true
+        },
+        {
+          "clause": "SLA-3_ConservativeCost_Deducted",
+          "status": "SAT",
+          "passed": true
+        },
+        {
+          "clause": "SLA-4_ZeroLookAhead",
+          "status": "SAT",
+          "passed": true
+        },
+        {
+          "clause": "SLA-5_OOS_NetProfit_Positive",
+          "status": "SAT",
+          "passed": true
+        },
+        {
+          "clause": "SLA-6_Beats_KOSPI_And_6040_RiskAdjusted",
+          "status": "SAT",
+          "passed": true
+        }
+      ]
+    }
+  }
+}

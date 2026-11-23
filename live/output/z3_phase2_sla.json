@@ -1,0 +1,74 @@
+{
+  "verified_at_kst": "2026-11-23 15:57:12 KST",
+  "parsed_files": {
+    "config_json": "C:\\Users\\양태철\\Desktop\\Invest_God\\live\\config.json",
+    "github_workflow_yml": "C:\\Users\\양태철\\Desktop\\Invest_God\\.github\\workflows\\paper_trading_24_7.yml",
+    "systemd_timer": "C:\\Users\\양태철\\Desktop\\Invest_God\\live\\deploy\\invest-god-upbit.timer",
+    "paper_portfolio_state": "C:\\Users\\양태철\\Desktop\\Invest_God\\live\\state\\paper_portfolio_state.json"
+  },
+  "parsed_evidence": {
+    "github_workflow": {
+      "crons": [
+        "5 0,4,8,12,16,20 * * *",
+        "20 7 * * 1-5"
+      ],
+      "runs_on": "ubuntu-latest",
+      "env_dry_run": "true",
+      "contents_permission": "write",
+      "has_auto_commit": true
+    },
+    "systemd_timer": {
+      "raw_on_calendar": "*-*-* 00,04,08,12,16,20:02:00 UTC",
+      "utc_hours": [
+        0,
+        4,
+        8,
+        12,
+        16,
+        20
+      ],
+      "minute": 2,
+      "is_utc": true,
+      "persistent": true
+    },
+    "config_dry_run": true,
+    "config_weights_sum": 1.0,
+    "paper_portfolio": {
+      "initial_capital_krw": 100000000.0,
+      "total_equity_krw": 99978860.43,
+      "sum_bucket_equities_krw": 99978860.43,
+      "min_bucket_cash_krw": 122760.43,
+      "day_num": 1,
+      "dry_run": true
+    }
+  },
+  "checks": [
+    {
+      "name": "sla1_pc_off_cloud_24_7",
+      "result": "SAT"
+    },
+    {
+      "name": "sla2_zero_leverage_spot_1x",
+      "result": "SAT"
+    },
+    {
+      "name": "sla3_portfolio_weights_master_v2_100pct",
+      "result": "SAT"
+    },
+    {
+      "name": "sla4_turbo1_risk_guardrails",
+      "result": "SAT"
+    },
+    {
+      "name": "sla5_default_dry_run_safety_lock",
+      "result": "SAT"
+    },
+    {
+      "name": "sla6_paper_portfolio_100m_accounting",
+      "result": "SAT"
+    }
+  ],
+  "passed_count": 6,
+  "total_count": 6,
+  "overall_verdict": "SAT"
+}

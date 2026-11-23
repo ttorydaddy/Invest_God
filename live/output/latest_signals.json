@@ -1,0 +1,155 @@
+{
+  "generated_at_kst": "2026-11-23 15:41:21 KST",
+  "generated_at_utc": "2026-11-23 06:41:32 UTC",
+  "dry_run": true,
+  "portfolio_version": "Master Portfolio v2 (85:15 Barbell)",
+  "portfolio_weights_pct": {
+    "crypto_short_turbo1": 28.33,
+    "krx_medium_d3": 28.33,
+    "longterm_core_l3": 28.33,
+    "skh_rocket_2x": 15.0
+  },
+  "buckets": {
+    "krx_medium_d3": {
+      "strategy_id": "KRX-MEDIUM-D3",
+      "traffic_light": "RED",
+      "summary": "코스피·코스닥 모두 하락/경계 레짐 — 신규 진입 중단 (기존 종목 손절·트레일링만 관리)",
+      "market_regime": {
+        "KOSPI": {
+          "status": "OK",
+          "ticker": "^KS11",
+          "as_of_date": "2026-11-23",
+          "close": 4715.98,
+          "ma60": 6149.54,
+          "gap_ma60_pct": -23.31,
+          "ret_5d_pct": -7.54,
+          "above_ma60": false,
+          "no_5d_crash": false,
+          "regime_pass": false,
+          "signal": "REST_DEFENSE"
+        },
+        "KOSDAQ": {
+          "status": "OK",
+          "ticker": "^KQ11",
+          "as_of_date": "2026-11-23",
+          "close": 635.95,
+          "ma60": 780.88,
+          "gap_ma60_pct": -18.56,
+          "ret_5d_pct": -4.46,
+          "above_ma60": false,
+          "no_5d_crash": true,
+          "regime_pass": false,
+          "signal": "REST_DEFENSE"
+        }
+      },
+      "live_scan_stats": {
+        "universe_size": 80,
+        "scanned_ok": 80,
+        "scan_failed": 0,
+        "latest_stock_date": "2026-11-23",
+        "data_source": "yfinance live (no local fallback)"
+      },
+      "breakout_candidates": [],
+      "near_watchlist": [],
+      "investor_flow_note": "외국인·기관 확정 수급(>=+2.0% 및 3일 누적>0%)은 16:00 KST 이후 증권사 조건검색식에서 최종 교차 확인하세요."
+    },
+    "longterm_core_l3": {
+      "strategy_id": "LONGTERM-CORE-L3",
+      "traffic_light": "RED",
+      "summary": "전원 120일선 이탈 — 100% 방어 대피 (KODEX 골드 50% + KODEX 단기채권 50%)",
+      "offensive_assets": [
+        {
+          "id": "NASDAQ100",
+          "name": "TIGER 미국나스닥100",
+          "ticker": "133690.KS",
+          "status": "OK",
+          "as_of_date": "2026-11-23",
+          "close": 153790.0,
+          "ma120": 183626.12,
+          "gap_ma120_pct": -16.25,
+          "regime": "SAFE_HAVEN",
+          "base_weight_pct": 40.0,
+          "target_weight_pct": 0.0
+        },
+        {
+          "id": "KOSPI200",
+          "name": "KODEX 200",
+          "ticker": "069500.KS",
+          "status": "OK",
+          "as_of_date": "2026-11-23",
+          "close": 73845.0,
+          "ma120": 108061.42,
+          "gap_ma120_pct": -31.66,
+          "regime": "SAFE_HAVEN",
+          "base_weight_pct": 30.0,
+          "target_weight_pct": 0.0
+        },
+        {
+          "id": "BTC_KRW",
+          "name": "비트코인 (업비트 KRW-BTC)",
+          "ticker": "KRW-BTC",
+          "status": "OK",
+          "as_of_date": "2026-11-23",
+          "close": 83910000.0,
+          "ma120": 103241541.67,
+          "gap_ma120_pct": -18.72,
+          "regime": "SAFE_HAVEN",
+          "base_weight_pct": 30.0,
+          "target_weight_pct": 0.0
+        }
+      ],
+      "defensive_allocation": [
+        {
+          "id": "GOLD",
+          "name": "KODEX 골드선물(H)",
+          "ticker": "132030.KS",
+          "target_weight_pct": 50.0
+        },
+        {
+          "id": "SHORT_BOND",
+          "name": "KODEX 단기채권",
+          "ticker": "153130.KS",
+          "target_weight_pct": 50.0
+        }
+      ],
+      "target_weights_pct": {
+        "NASDAQ100": 0.0,
+        "KOSPI200": 0.0,
+        "BTC_KRW": 0.0,
+        "GOLD": 50.0,
+        "SHORT_BOND": 50.0
+      },
+      "rebalance_schedule": "매월 마지막 거래일 종가 확인 → 익월 첫 거래일 시가 리밸런싱"
+    },
+    "skh_rocket_2x": {
+      "strategy_id": "SKH-ROCKET-20-120",
+      "status": "OK",
+      "name": "SK하이닉스 2배 로켓",
+      "ticker": "000660.KS",
+      "as_of_date": "2026-11-23",
+      "close": 1089000,
+      "ma20": 1263800,
+      "ma120": 1768083,
+      "spread_ma20_vs_ma120_pct": -28.52,
+      "signal": "SAFE_RP",
+      "action_kr": "단기채/RP 대피 (RP / 파킹형 단기채 ETF (CD금리·KOFR))",
+      "traffic_light": "RED",
+      "summary": "데드크로스 상태 (MA20 1,263,800원 <= MA120 1,768,083원, -28.52%) → 단기채/RP 전액 대피"
+    }
+  },
+  "quarterly_rebalancing": {
+    "as_of_date_kst": "2026-11-23",
+    "is_rebalance_alert": false,
+    "next_quarter_start": "2027-01-01",
+    "days_until_next_quarter": 39,
+    "is_l3_month_end_window": false,
+    "days_to_month_end": 7,
+    "target_split": "본진 85.0% (단기 28.33% / 중기 28.33% / 장기 28.33%) : 로켓 15.0%",
+    "checklist": [
+      "총 평가자산(단기 코인 + 중기 KRX + 장기 코어 + 로켓) 합산",
+      "로켓 비중 > 15%면 초과분 매도 → 본진 3개 버킷에 1/3씩 수확",
+      "로켓 비중 < 15%면 부족분 보충 (단, 하이닉스 데드크로스 중이면 RP/단기채로 채움)",
+      "본진 3개 버킷이 각각 28.33% 균등 배분되도록 미세 조정"
+    ]
+  }
+}

@@ -1,0 +1,17 @@
+[Unit]
+Description=Invest_God Upbit KRW Turbo-1 4h Auto-Trading Bot
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=oneshot
+User=ubuntu
+WorkingDirectory=/opt/invest_god
+EnvironmentFile=/opt/invest_god/live/.env
+ExecStart=/opt/invest_god/venv/bin/python /opt/invest_god/live/upbit_turbo1_bot.py
+StandardOutput=journal
+StandardError=journal
+TimeoutStartSec=180
+
+[Install]
+WantedBy=multi-user.target

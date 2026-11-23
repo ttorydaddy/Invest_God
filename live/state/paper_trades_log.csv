@@ -1,0 +1,3 @@
+﻿timestamp_kst,date,bucket,action,ticker,name,qty,price_krw,amount_krw,fee_krw,reason
+2026-11-23 15:49:39 KST,2026-11-23,longterm_core_l3,PAPER_BUY,132030.KS,KODEX 골드선물(H),700,20200.0,14140000.0,10605.0,L3_DAY1_INITIAL_ALLOC
+2026-11-23 15:49:39 KST,2026-11-23,longterm_core_l3,PAPER_BUY,153130.KS,KODEX 단기채권,124,113275.0,14046100.0,10535.0,L3_DAY1_INITIAL_ALLOC

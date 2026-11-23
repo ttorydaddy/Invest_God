@@ -1,0 +1,363 @@
+{
+  "meta": {
+    "bt_start": "2021-01-04",
+    "is_end": "2024-06-30",
+    "oos_start": "2024-07-01",
+    "bt_end": "2026-11-19",
+    "trading_days": 1439,
+    "max_positions": 3,
+    "max_single_weight": 0.3333333333333333,
+    "round_trip_cost": 0.007299999999999999,
+    "data_limitations": [
+      "연기금 단독 세부분류 미제공 -> 외인+기관 합산 확정 순매수로 근사",
+      "재무제표 무차입 흑자 데이터 미제공 -> 시총 상위 200종목 + 최근 60일 거래대금 500억 이상 이력으로 근사"
+    ]
+  },
+  "benchmarks": {
+    "KOSPI": {
+      "full": {
+        "total_return": 0.7449405566136038,
+        "cagr_cal": 0.09943697661355966,
+        "cagr_252": 0.10240459537530966,
+        "sharpe": 0.48300068981325955,
+        "mdd": -0.4548847626118053
+      },
+      "is": {
+        "total_return": -0.049798734990941895,
+        "cagr_cal": -0.014572171612260654,
+        "cagr_252": -0.014890962509867323,
+        "sharpe": -0.0060228265828259605,
+        "mdd": -0.34785081259316275
+      },
+      "oos": {
+        "total_return": 0.8321405370186483,
+        "cagr_cal": 0.28905249458283055,
+        "cagr_252": 0.3003324849763773,
+        "sharpe": 0.8527141457499611,
+        "mdd": -0.4548847626118053
+      }
+    }
+  },
+  "cases": {
+    "R3_Strict5d": {
+      "label": "원형 해석 A (5일 경과 시 -4%~+3% 횡보만 청산)",
+      "net": {
+        "full": {
+          "total_return": -0.8188189857922601,
+          "cagr_cal": -0.25239596662445785,
+          "cagr_252": -0.25855404953329086,
+          "sharpe": -0.8859738671791506,
+          "mdd": -0.8629616020684171,
+          "num_trade_legs": 1080,
+          "num_closed_positions": 932,
+          "win_rate_leg": 0.4212962962962963,
+          "payoff_ratio": 2.0839363194469254,
+          "profit_factor": 1.517105640557354,
+          "avg_holding_days": 4.475321888412017,
+          "avg_exposure": 0.7879158339079014,
+          "final_equity": 18118101.42077399,
+          "exit_reasons": {
+            "half_tp_12pct": 148,
+            "trailing_stop_5pct": 148,
+            "hard_stop_4pct": 433,
+            "sideways_5d_strict": 350,
+            "max_hold_days": 1
+          }
+        },
+        "is": {
+          "total_return": -0.713363907302043,
+          "cagr_cal": -0.30168397565596505,
+          "cagr_252": -0.30718917850439165,
+          "sharpe": -1.2978267031509112,
+          "mdd": -0.753309904984633,
+          "num_trade_legs": 592,
+          "num_closed_positions": 530,
+          "win_rate_leg": 0.40202702702702703,
+          "payoff_ratio": 1.9456369197933845,
+          "profit_factor": 1.3080835788441418,
+          "avg_holding_days": 4.667924528301887,
+          "avg_exposure": 0.8178959876036617,
+          "final_equity": 28663609.269795705,
+          "exit_reasons": {
+            "half_tp_12pct": 62,
+            "trailing_stop_5pct": 62,
+            "hard_stop_4pct": 219,
+            "sideways_5d_strict": 248,
+            "max_hold_days": 1
+          }
+        },
+        "oos": {
+          "total_return": -0.3618936765201626,
+          "cagr_cal": -0.1717093436646996,
+          "cagr_252": -0.17704649718967203,
+          "sharpe": -0.4199280035145377,
+          "mdd": -0.4628877861010773,
+          "num_trade_legs": 488,
+          "num_closed_positions": 402,
+          "win_rate_leg": 0.444672131147541,
+          "payoff_ratio": 2.1920373364434846,
+          "profit_factor": 1.7552476088864863,
+          "avg_holding_days": 4.221393034825871,
+          "avg_exposure": 0.7436422162298256,
+          "final_equity": 18118101.42077399,
+          "exit_reasons": {
+            "hard_stop_4pct": 214,
+            "sideways_5d_strict": 102,
+            "half_tp_12pct": 86,
+            "trailing_stop_5pct": 86
+          }
+        },
+        "audit": {
+          "max_observed_total_weight": 0.9999989609561403,
+          "max_observed_single_entry_weight": 0.33333118209511403,
+          "min_observed_cash": 95.81965719908476,
+          "min_observed_equity": 15922873.162074007,
+          "stop_loss_pct": 0.04,
+          "round_trip_cost": 0.007299999999999999,
+          "total_entries": 933,
+          "hard_stop_rate_entry": 0.4640943193997856,
+          "half_tp_rate_entry": 0.15862808145766344,
+          "sideways_5d_rate_entry": 0.37513397642015006
+        }
+      },
+      "gross": {
+        "full": {
+          "total_return": 0.6715098278999994,
+          "cagr_cal": 0.09141753488903581,
+          "cagr_252": 0.09413571930394449,
+          "sharpe": 0.4559889551277644,
+          "mdd": -0.4236873550462279,
+          "num_trade_legs": 1080,
+          "num_closed_positions": 932,
+          "win_rate_leg": 0.462037037037037,
+          "payoff_ratio": 2.366332778149822,
+          "profit_factor": 2.032358100338673,
+          "avg_holding_days": 4.475321888412017,
+          "avg_exposure": 0.789855278879305,
+          "final_equity": 167150982.78999993,
+          "exit_reasons": {
+            "half_tp_12pct": 148,
+            "trailing_stop_5pct": 148,
+            "hard_stop_4pct": 433,
+            "sideways_5d_strict": 350,
+            "max_hold_days": 1
+          }
+        }
+      }
+    },
+    "R3_Force5d": {
+      "label": "원형 해석 B (5일 경과 시 +12% 미도달 무조건 청산)",
+      "net": {
+        "full": {
+          "total_return": -0.8145099828943617,
+          "cagr_cal": -0.24939781132839622,
+          "cagr_252": -0.25549586607932706,
+          "sharpe": -0.8576626329470738,
+          "mdd": -0.8334529905610666,
+          "num_trade_legs": 1203,
+          "num_closed_positions": 1088,
+          "win_rate_leg": 0.41895261845386533,
+          "payoff_ratio": 1.8539749422254903,
+          "profit_factor": 1.3367716321625764,
+          "avg_holding_days": 3.8143382352941178,
+          "avg_exposure": 0.7937938773178175,
+          "final_equity": 18549001.71056383,
+          "exit_reasons": {
+            "half_tp_12pct": 115,
+            "trailing_stop_5pct": 115,
+            "sideways_5d_force": 487,
+            "hard_stop_4pct": 486
+          }
+        },
+        "is": {
+          "total_return": -0.7020775557080339,
+          "cagr_cal": -0.29389072937089034,
+          "cagr_252": -0.29928598067211176,
+          "sharpe": -1.2534550116591763,
+          "mdd": -0.7342141497866461,
+          "num_trade_legs": 652,
+          "num_closed_positions": 605,
+          "win_rate_leg": 0.40644171779141103,
+          "payoff_ratio": 1.6713444322694153,
+          "profit_factor": 1.1444606577555458,
+          "avg_holding_days": 4.0694214876033055,
+          "avg_exposure": 0.8239953964415805,
+          "final_equity": 29792244.42919661,
+          "exit_reasons": {
+            "half_tp_12pct": 47,
+            "trailing_stop_5pct": 47,
+            "sideways_5d_force": 321,
+            "hard_stop_4pct": 237
+          }
+        },
+        "oos": {
+          "total_return": -0.37149191003314885,
+          "cagr_cal": -0.176956942828574,
+          "cagr_252": -0.18243860073220663,
+          "sharpe": -0.42249274601317305,
+          "mdd": -0.4326623034274881,
+          "num_trade_legs": 551,
+          "num_closed_positions": 483,
+          "win_rate_leg": 0.4337568058076225,
+          "payoff_ratio": 2.0147492766617447,
+          "profit_factor": 1.5433496061607659,
+          "avg_holding_days": 3.494824016563147,
+          "avg_exposure": 0.7491933551006252,
+          "final_equity": 18549001.71056383,
+          "exit_reasons": {
+            "hard_stop_4pct": 249,
+            "sideways_5d_force": 166,
+            "half_tp_12pct": 68,
+            "trailing_stop_5pct": 68
+          }
+        },
+        "audit": {
+          "max_observed_total_weight": 0.9999923332451567,
+          "max_observed_single_entry_weight": 0.33333228937821363,
+          "min_observed_cash": 540.2871333491057,
+          "min_observed_equity": 18220373.325498834,
+          "stop_loss_pct": 0.04,
+          "round_trip_cost": 0.007299999999999999,
+          "total_entries": 1089,
+          "hard_stop_rate_entry": 0.4462809917355372,
+          "half_tp_rate_entry": 0.10560146923783287,
+          "sideways_5d_rate_entry": 0.44719926538108357
+        }
+      },
+      "gross": {
+        "full": {
+          "total_return": 1.6013468222999991,
+          "cagr_cal": 0.17679236823655664,
+          "cagr_252": 0.18225235649386318,
+          "sharpe": 0.7197863139827572,
+          "mdd": -0.30534157246505267,
+          "num_trade_legs": 1203,
+          "num_closed_positions": 1088,
+          "win_rate_leg": 0.45303408146300916,
+          "payoff_ratio": 2.1814110760195042,
+          "profit_factor": 1.8067918486787842,
+          "avg_holding_days": 3.8143382352941178,
+          "avg_exposure": 0.7960552025980483,
+          "final_equity": 260134682.22999993,
+          "exit_reasons": {
+            "half_tp_12pct": 115,
+            "trailing_stop_5pct": 115,
+            "sideways_5d_force": 487,
+            "hard_stop_4pct": 486
+          }
+        }
+      }
+    },
+    "R3_Regime": {
+      "label": "보너스 (원형 A + 시장 레짐 필터 MA60)",
+      "net": {
+        "full": {
+          "total_return": -0.7561783217750322,
+          "cagr_cal": -0.21362292266544136,
+          "cagr_252": -0.218978272491966,
+          "sharpe": -0.9273730634585876,
+          "mdd": -0.8220133095619415,
+          "num_trade_legs": 745,
+          "num_closed_positions": 647,
+          "win_rate_leg": 0.40939597315436244,
+          "payoff_ratio": 2.0852211656150708,
+          "profit_factor": 1.4454373988922695,
+          "avg_holding_days": 4.508500772797527,
+          "avg_exposure": 0.5509182316494541,
+          "final_equity": 24382167.822496776,
+          "exit_reasons": {
+            "half_tp_12pct": 98,
+            "trailing_stop_5pct": 97,
+            "hard_stop_4pct": 310,
+            "sideways_5d_strict": 239,
+            "max_hold_days": 1
+          }
+        },
+        "is": {
+          "total_return": -0.7113458074419508,
+          "cagr_cal": -0.30027461561027724,
+          "cagr_252": -0.30576007777043424,
+          "sharpe": -1.6506780421795346,
+          "mdd": -0.7416301699289958,
+          "num_trade_legs": 427,
+          "num_closed_positions": 385,
+          "win_rate_leg": 0.3864168618266979,
+          "payoff_ratio": 1.7957619671544978,
+          "profit_factor": 1.1309187961087515,
+          "avg_holding_days": 4.6,
+          "avg_exposure": 0.5814844659043643,
+          "final_equity": 28865419.255804926,
+          "exit_reasons": {
+            "half_tp_12pct": 42,
+            "trailing_stop_5pct": 41,
+            "hard_stop_4pct": 170,
+            "sideways_5d_strict": 173,
+            "max_hold_days": 1
+          }
+        },
+        "oos": {
+          "total_return": -0.1503941412972567,
+          "cagr_cal": -0.06606280731411562,
+          "cagr_252": -0.06825052654918207,
+          "sharpe": -0.12361839974276902,
+          "mdd": -0.34421814328573364,
+          "num_trade_legs": 318,
+          "num_closed_positions": 262,
+          "win_rate_leg": 0.44025157232704404,
+          "payoff_ratio": 2.3704858335589614,
+          "profit_factor": 1.8644270601025572,
+          "avg_holding_days": 4.374045801526718,
+          "avg_exposure": 0.5057791111835112,
+          "final_equity": 24382167.822496776,
+          "exit_reasons": {
+            "hard_stop_4pct": 140,
+            "sideways_5d_strict": 66,
+            "half_tp_12pct": 56,
+            "trailing_stop_5pct": 56
+          }
+        },
+        "audit": {
+          "max_observed_total_weight": 0.9999826326297302,
+          "max_observed_single_entry_weight": 0.33332953520734987,
+          "min_observed_cash": 629.5589569360018,
+          "min_observed_equity": 19608817.84944337,
+          "stop_loss_pct": 0.04,
+          "round_trip_cost": 0.007299999999999999,
+          "total_entries": 647,
+          "hard_stop_rate_entry": 0.47913446676970634,
+          "half_tp_rate_entry": 0.15146831530139104,
+          "sideways_5d_rate_entry": 0.3693972179289026
+        }
+      },
+      "gross": {
+        "full": {
+          "total_return": 0.1363426844000002,
+          "cagr_cal": 0.02200286095145132,
+          "cagr_252": 0.022635539625930345,
+          "sharpe": 0.21173731116748773,
+          "mdd": -0.49916521615574905,
+          "num_trade_legs": 745,
+          "num_closed_positions": 647,
+          "win_rate_leg": 0.44966442953020136,
+          "payoff_ratio": 2.360209437247556,
+          "profit_factor": 1.9284638084827712,
+          "avg_holding_days": 4.508500772797527,
+          "avg_exposure": 0.5520328081061474,
+          "final_equity": 113634268.44000003,
+          "exit_reasons": {
+            "half_tp_12pct": 98,
+            "trailing_stop_5pct": 97,
+            "hard_stop_4pct": 310,
+            "sideways_5d_strict": 239,
+            "max_hold_days": 1
+          }
+        }
+      }
+    }
+  },
+  "lookahead_perturbation_max_diff": {
+    "R3_Strict5d": 0.0,
+    "R3_Force5d": 0.0,
+    "R3_Regime": 0.0
+  }
+}

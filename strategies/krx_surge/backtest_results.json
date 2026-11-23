@@ -1,0 +1,452 @@
+{
+  "meta": {
+    "universe_size": 200,
+    "kospi_count": 100,
+    "kosdaq_count": 100,
+    "bt_start": "2021-01-04",
+    "is_end": "2024-06-30",
+    "oos_start": "2024-07-01",
+    "bt_end": "2026-11-19",
+    "trading_days": 1439,
+    "initial_capital": 100000000.0,
+    "max_positions": 5,
+    "max_single_weight": 0.2,
+    "buy_cost": 0.00265,
+    "sell_cost": 0.00465,
+    "round_trip_cost": 0.007299999999999999
+  },
+  "benchmarks": {
+    "KOSPI": {
+      "full": {
+        "total_return": 0.7449405566136038,
+        "cagr": 0.10240459537530966,
+        "sharpe": 0.48300068981325955,
+        "mdd": -0.4548847626118053
+      },
+      "is": {
+        "total_return": -0.049798734990941895,
+        "cagr": -0.014890962509867323,
+        "sharpe": -0.0060228265828259605,
+        "mdd": -0.34785081259316275
+      },
+      "oos": {
+        "total_return": 0.8321405370186483,
+        "cagr": 0.3003324849763773,
+        "sharpe": 0.8527141457499611,
+        "mdd": -0.4548847626118053
+      }
+    },
+    "KOSDAQ": {
+      "full": {
+        "total_return": -0.29951310224940164,
+        "cagr": -0.060436360260316735,
+        "sharpe": -0.05863303955936201,
+        "mdd": -0.4788938469767693
+      },
+      "is": {
+        "total_return": -0.1403203630868224,
+        "cagr": -0.043435503226245564,
+        "sharpe": -0.08730315019501907,
+        "mdd": -0.38529242749484083
+      },
+      "oos": {
+        "total_return": -0.19163078814493617,
+        "cagr": -0.08814218049883904,
+        "sharpe": -0.047087623191110886,
+        "mdd": -0.4788938469767693
+      }
+    }
+  },
+  "strategies": {
+    "Strategy_A_VCP_Breakout": {
+      "net": {
+        "full": {
+          "start_date": "2021-01-04",
+          "end_date": "2026-11-19",
+          "trading_days": 1439,
+          "total_return": 0.5824995614952242,
+          "cagr": 0.08370074600563004,
+          "sharpe": 0.40517440581270536,
+          "mdd": -0.6209955465982546,
+          "num_trades": 830,
+          "win_rate": 0.3313253012048193,
+          "avg_win": 0.1414066199067248,
+          "avg_loss": 0.06139810063814553,
+          "payoff_ratio": 2.3031106571213935,
+          "profit_factor": 1.141180956231317,
+          "avg_holding_days": 6.713253012048193,
+          "avg_exposure": 0.7070422532917499,
+          "final_equity": 158249956.14952242
+        },
+        "is": {
+          "start_date": "2021-01-04",
+          "end_date": "2024-06-28",
+          "trading_days": 858,
+          "total_return": -0.10139583574736688,
+          "cagr": -0.030913028891831007,
+          "sharpe": 0.06499981457998309,
+          "mdd": -0.6209955465982546,
+          "num_trades": 488,
+          "win_rate": 0.3155737704918033,
+          "avg_win": 0.12842276969970132,
+          "avg_loss": 0.057840064241897776,
+          "payoff_ratio": 2.220308213397096,
+          "profit_factor": 1.023734924739978,
+          "avg_holding_days": 7.004098360655738,
+          "avg_exposure": 0.7310976100566448,
+          "final_equity": 89860416.42526332
+        },
+        "oos": {
+          "start_date": "2024-07-01",
+          "end_date": "2026-11-19",
+          "trading_days": 581,
+          "total_return": 0.7524573408175137,
+          "cagr": 0.27549398294987704,
+          "sharpe": 0.8733112260344313,
+          "mdd": -0.3638952093303812,
+          "num_trades": 342,
+          "win_rate": 0.3538011695906433,
+          "avg_win": 0.15793152017020923,
+          "avg_loss": 0.06677540451301768,
+          "payoff_ratio": 2.3651151396532675,
+          "profit_factor": 1.2949272936563154,
+          "avg_holding_days": 6.298245614035087,
+          "avg_exposure": 0.671518163611406,
+          "final_equity": 158249956.14952242
+        },
+        "audit": {
+          "max_observed_total_weight": 0.9999997929862882,
+          "max_observed_single_entry_weight": 0.1999996267859873,
+          "min_observed_cash": 41.71989394724369,
+          "min_observed_equity": 76381537.52494162,
+          "stop_loss_pct": 0.08,
+          "trailing_stop_pct": 0.12,
+          "round_trip_cost": 0.007299999999999999
+        },
+        "exit_reasons": {
+          "trailing_stop": 290,
+          "hard_stop": 204,
+          "below_ma10": 332,
+          "max_hold_days": 4
+        }
+      },
+      "gross": {
+        "full": {
+          "start_date": "2021-01-04",
+          "end_date": "2026-11-19",
+          "trading_days": 1439,
+          "total_return": 4.087748996799999,
+          "cagr": 0.3296211529735982,
+          "sharpe": 1.0231428689112383,
+          "mdd": -0.503716299945474,
+          "num_trades": 830,
+          "win_rate": 0.3530120481927711,
+          "avg_win": 0.14082065599358168,
+          "avg_loss": 0.056474838287494715,
+          "payoff_ratio": 2.493511451537237,
+          "profit_factor": 1.360519283613434,
+          "avg_holding_days": 6.713253012048193,
+          "avg_exposure": 0.7072927812298946,
+          "final_equity": 508774899.67999995
+        },
+        "is": {
+          "start_date": "2021-01-04",
+          "end_date": "2024-06-28",
+          "trading_days": 858,
+          "total_return": 0.7791554715999998,
+          "cagr": 0.1843754519604519,
+          "sharpe": 0.6819650497354569,
+          "mdd": -0.503716299945474,
+          "num_trades": 488,
+          "win_rate": 0.3422131147540984,
+          "avg_win": 0.12638002909359627,
+          "avg_loss": 0.05316054318820462,
+          "payoff_ratio": 2.3773276478039778,
+          "profit_factor": 1.2368028572687366,
+          "avg_holding_days": 7.004098360655738,
+          "avg_exposure": 0.731362894919937,
+          "final_equity": 177915547.15999997
+        },
+        "oos": {
+          "start_date": "2024-07-01",
+          "end_date": "2026-11-19",
+          "trading_days": 581,
+          "total_return": 1.842379055372736,
+          "cagr": 0.5731775220371438,
+          "sharpe": 1.493258147190369,
+          "mdd": -0.3039991096505047,
+          "num_trades": 342,
+          "win_rate": 0.3684210526315789,
+          "avg_win": 0.1599602170435623,
+          "avg_loss": 0.06140024906005082,
+          "payoff_ratio": 2.6052046936669204,
+          "profit_factor": 1.5197027379723693,
+          "avg_holding_days": 6.298245614035087,
+          "avg_exposure": 0.671746899050796,
+          "final_equity": 508774899.67999995
+        }
+      }
+    },
+    "Strategy_B_BB_Squeeze": {
+      "net": {
+        "full": {
+          "start_date": "2021-01-04",
+          "end_date": "2026-11-19",
+          "trading_days": 1439,
+          "total_return": -0.10600587607354583,
+          "cagr": -0.019432154359610876,
+          "sharpe": 0.05824740916002636,
+          "mdd": -0.5645618783943418,
+          "num_trades": 719,
+          "win_rate": 0.3282336578581363,
+          "avg_win": 0.11997108088229523,
+          "avg_loss": 0.057392505252885626,
+          "payoff_ratio": 2.0903614566688256,
+          "profit_factor": 1.0213774405255593,
+          "avg_holding_days": 7.713490959666203,
+          "avg_exposure": 0.6951303257682189,
+          "final_equity": 89399412.39264542
+        },
+        "is": {
+          "start_date": "2021-01-04",
+          "end_date": "2024-06-28",
+          "trading_days": 858,
+          "total_return": -0.2000696313975261,
+          "cagr": -0.06346110954114337,
+          "sharpe": -0.14144891950068916,
+          "mdd": -0.4774592130779446,
+          "num_trades": 417,
+          "win_rate": 0.3333333333333333,
+          "avg_win": 0.10396910076803126,
+          "avg_loss": 0.055630933103456404,
+          "payoff_ratio": 1.868908087065172,
+          "profit_factor": 0.9344540435325853,
+          "avg_holding_days": 8.40767386091127,
+          "avg_exposure": 0.746874635611492,
+          "final_equity": 79993036.86024739
+        },
+        "oos": {
+          "start_date": "2024-07-01",
+          "end_date": "2026-11-19",
+          "trading_days": 581,
+          "total_return": 0.14033672383451967,
+          "cagr": 0.058613072950492784,
+          "sharpe": 0.34018018431029123,
+          "mdd": -0.32875353061200085,
+          "num_trades": 302,
+          "win_rate": 0.3211920529801324,
+          "avg_win": 0.14290175341716832,
+          "avg_loss": 0.05978136894820918,
+          "payoff_ratio": 2.3904061738862055,
+          "profit_factor": 1.1310702383754225,
+          "avg_holding_days": 6.754966887417218,
+          "avg_exposure": 0.6187161814557777,
+          "final_equity": 89399412.39264542
+        },
+        "audit": {
+          "max_observed_total_weight": 0.9999989137967308,
+          "max_observed_single_entry_weight": 0.19999824620474058,
+          "min_observed_cash": 86.04515506699681,
+          "min_observed_equity": 53361958.40286176,
+          "stop_loss_pct": 0.07,
+          "trailing_stop_pct": 0.1,
+          "round_trip_cost": 0.007299999999999999
+        },
+        "exit_reasons": {
+          "trailing_stop": 343,
+          "hard_stop": 212,
+          "below_ma20": 105,
+          "max_hold_days": 59
+        }
+      },
+      "gross": {
+        "full": {
+          "start_date": "2021-01-04",
+          "end_date": "2026-11-19",
+          "trading_days": 1439,
+          "total_return": 1.480166179099999,
+          "cagr": 0.17241700886824018,
+          "sharpe": 0.7386987517307697,
+          "mdd": -0.3524973334250254,
+          "num_trades": 719,
+          "win_rate": 0.3518776077885953,
+          "avg_win": 0.11982335431169479,
+          "avg_loss": 0.052457396912198494,
+          "payoff_ratio": 2.284203208029008,
+          "profit_factor": 1.2401360764620997,
+          "avg_holding_days": 7.713490959666203,
+          "avg_exposure": 0.6950999320118041,
+          "final_equity": 248016617.9099999
+        },
+        "is": {
+          "start_date": "2021-01-04",
+          "end_date": "2024-06-28",
+          "trading_days": 858,
+          "total_return": 0.43588761249999974,
+          "cagr": 0.11210876774209488,
+          "sharpe": 0.5574054849785933,
+          "mdd": -0.3524973334250254,
+          "num_trades": 417,
+          "win_rate": 0.3597122302158273,
+          "avg_win": 0.1041241911469289,
+          "avg_loss": 0.050866803049416716,
+          "payoff_ratio": 2.046996958817582,
+          "profit_factor": 1.1499982914705509,
+          "avg_holding_days": 8.40767386091127,
+          "avg_exposure": 0.7467548753047931,
+          "final_equity": 143588761.24999997
+        },
+        "oos": {
+          "start_date": "2024-07-01",
+          "end_date": "2026-11-19",
+          "trading_days": 581,
+          "total_return": 0.7599972854570498,
+          "cagr": 0.27787134508456046,
+          "sharpe": 1.0021025042657703,
+          "mdd": -0.2744264216228953,
+          "num_trades": 302,
+          "win_rate": 0.34105960264900664,
+          "avg_win": 0.14268621328950915,
+          "avg_loss": 0.05459151028588058,
+          "payoff_ratio": 2.6137070130923483,
+          "profit_factor": 1.3528232278819674,
+          "avg_holding_days": 6.754966887417218,
+          "avg_exposure": 0.6188177610214691,
+          "final_equity": 248016617.9099999
+        }
+      }
+    },
+    "Strategy_C_Larry_VolBreakout": {
+      "net": {
+        "full": {
+          "start_date": "2021-01-04",
+          "end_date": "2026-11-19",
+          "trading_days": 1439,
+          "total_return": -0.9878257010802399,
+          "cagr": -0.5379171398269675,
+          "sharpe": -4.118081671550803,
+          "mdd": -0.9878748980625056,
+          "num_trades": 2170,
+          "win_rate": 0.36129032258064514,
+          "avg_win": 0.03161198946645315,
+          "avg_loss": 0.0344030224203871,
+          "payoff_ratio": 0.9188724490590107,
+          "profit_factor": 0.5197662338111569,
+          "avg_holding_days": 0.8612903225806452,
+          "avg_exposure": 0.24539061981223104,
+          "final_equity": 1215190.815310639
+        },
+        "is": {
+          "start_date": "2021-01-04",
+          "end_date": "2024-06-28",
+          "trading_days": 858,
+          "total_return": -0.9423744201933589,
+          "cagr": -0.5675011911836642,
+          "sharpe": -4.3456803866866816,
+          "mdd": -0.9423744201933589,
+          "num_trades": 1361,
+          "win_rate": 0.35782512858192506,
+          "avg_win": 0.029439327376851832,
+          "avg_loss": 0.032653424599698146,
+          "payoff_ratio": 0.9015693679224069,
+          "profit_factor": 0.502361878922442,
+          "avg_holding_days": 0.8699485672299779,
+          "avg_exposure": 0.27133764165038243,
+          "final_equity": 5751959.580548919
+        },
+        "oos": {
+          "start_date": "2024-07-01",
+          "end_date": "2026-11-19",
+          "trading_days": 581,
+          "total_return": -0.7866953344791874,
+          "cagr": -0.48836056666431316,
+          "sharpe": -3.744317641654295,
+          "mdd": -0.7875573098517317,
+          "num_trades": 809,
+          "win_rate": 0.36711990111248455,
+          "avg_win": 0.03517457006455362,
+          "avg_loss": 0.03738964057523504,
+          "payoff_ratio": 0.9407571060699479,
+          "profit_factor": 0.5457126181694816,
+          "avg_holding_days": 0.8467243510506799,
+          "avg_exposure": 0.20707298687396275,
+          "final_equity": 1215190.815310639
+        },
+        "audit": {
+          "max_observed_total_weight": 0.9950024617274675,
+          "max_observed_single_entry_weight": 0.1999990272359533,
+          "min_observed_cash": 161324.69848637097,
+          "min_observed_equity": 1210280.1653106392,
+          "stop_loss_pct": 0.07,
+          "trailing_stop_pct": 0.0,
+          "round_trip_cost": 0.007299999999999999
+        },
+        "exit_reasons": {
+          "next_open_exit": 1869,
+          "intraday_hard_stop": 301
+        }
+      },
+      "gross": {
+        "full": {
+          "start_date": "2021-01-04",
+          "end_date": "2026-11-19",
+          "trading_days": 1439,
+          "total_return": -0.8272268684260581,
+          "cagr": -0.26469824308711465,
+          "sharpe": -1.4098844195044415,
+          "mdd": -0.8548986420148514,
+          "num_trades": 2323,
+          "win_rate": 0.44683598794662077,
+          "avg_win": 0.033169924311468126,
+          "avg_loss": 0.0332419201539174,
+          "payoff_ratio": 0.9978341852060315,
+          "profit_factor": 0.8060325947423022,
+          "avg_holding_days": 0.8553594489883771,
+          "avg_exposure": 0.2736246183975076,
+          "final_equity": 17263664.07999985
+        },
+        "is": {
+          "start_date": "2021-01-04",
+          "end_date": "2024-06-28",
+          "trading_days": 858,
+          "total_return": -0.601374268372015,
+          "cagr": -0.23672063189158954,
+          "sharpe": -1.3527257003305486,
+          "mdd": -0.6685985526481921,
+          "num_trades": 1361,
+          "win_rate": 0.45113886847905954,
+          "avg_win": 0.0301083645835435,
+          "avg_loss": 0.030536976597068773,
+          "payoff_ratio": 0.9859641634081608,
+          "profit_factor": 0.8104176657732391,
+          "avg_holding_days": 0.8699485672299779,
+          "avg_exposure": 0.2752258510017148,
+          "final_equity": 39831081.729999885
+        },
+        "oos": {
+          "start_date": "2024-07-01",
+          "end_date": "2026-11-19",
+          "trading_days": 581,
+          "total_return": -0.5623533567961733,
+          "cagr": -0.3012162983159058,
+          "sharpe": -1.4757062897003888,
+          "mdd": -0.608703511794001,
+          "num_trades": 962,
+          "win_rate": 0.4407484407484408,
+          "avg_win": 0.037603409389170284,
+          "avg_loss": 0.03699766892151206,
+          "payoff_ratio": 1.0163723954864092,
+          "profit_factor": 0.8010072410524844,
+          "avg_holding_days": 0.8347193347193347,
+          "avg_exposure": 0.2712599754122928,
+          "final_equity": 17263664.07999985
+        }
+      }
+    }
+  },
+  "lookahead_perturbation_max_diff": {
+    "Strategy_A_VCP_Breakout": 0.0,
+    "Strategy_B_BB_Squeeze": 0.0,
+    "Strategy_C_Larry_VolBreakout": 0.0
+  }
+}

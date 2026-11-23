@@ -1,0 +1,219 @@
+{
+  "cases": {
+    "SL3": {
+      "case": "SL3",
+      "structural_1_to_5": "SAT",
+      "oos_positive_6": "SAT",
+      "dominates_kospi_7": "UNSAT",
+      "clauses": [
+        {
+          "clause": "SLA-1_NoLeverage",
+          "status": "SAT",
+          "passed": true
+        },
+        {
+          "clause": "SLA-2_NoBankruptcy",
+          "status": "SAT",
+          "passed": true
+        },
+        {
+          "clause": "SLA-3_SingleStockCap_LE_20pct",
+          "status": "SAT",
+          "passed": true
+        },
+        {
+          "clause": "SLA-4_ConservativeCost_Deducted",
+          "status": "SAT",
+          "passed": true
+        },
+        {
+          "clause": "SLA-5_HardStop_And_ZeroLookAhead",
+          "status": "SAT",
+          "passed": true
+        },
+        {
+          "clause": "SLA-6_OOS_Positive",
+          "status": "SAT",
+          "passed": true
+        },
+        {
+          "clause": "SLA-7_Dominates_KOSPI_Full_And_OOS",
+          "status": "UNSAT",
+          "passed": false
+        }
+      ]
+    },
+    "SL5": {
+      "case": "SL5",
+      "structural_1_to_5": "SAT",
+      "oos_positive_6": "SAT",
+      "dominates_kospi_7": "UNSAT",
+      "clauses": [
+        {
+          "clause": "SLA-1_NoLeverage",
+          "status": "SAT",
+          "passed": true
+        },
+        {
+          "clause": "SLA-2_NoBankruptcy",
+          "status": "SAT",
+          "passed": true
+        },
+        {
+          "clause": "SLA-3_SingleStockCap_LE_20pct",
+          "status": "SAT",
+          "passed": true
+        },
+        {
+          "clause": "SLA-4_ConservativeCost_Deducted",
+          "status": "SAT",
+          "passed": true
+        },
+        {
+          "clause": "SLA-5_HardStop_And_ZeroLookAhead",
+          "status": "SAT",
+          "passed": true
+        },
+        {
+          "clause": "SLA-6_OOS_Positive",
+          "status": "SAT",
+          "passed": true
+        },
+        {
+          "clause": "SLA-7_Dominates_KOSPI_Full_And_OOS",
+          "status": "UNSAT",
+          "passed": false
+        }
+      ]
+    },
+    "SL8": {
+      "case": "SL8",
+      "structural_1_to_5": "SAT",
+      "oos_positive_6": "SAT",
+      "dominates_kospi_7": "SAT",
+      "clauses": [
+        {
+          "clause": "SLA-1_NoLeverage",
+          "status": "SAT",
+          "passed": true
+        },
+        {
+          "clause": "SLA-2_NoBankruptcy",
+          "status": "SAT",
+          "passed": true
+        },
+        {
+          "clause": "SLA-3_SingleStockCap_LE_20pct",
+          "status": "SAT",
+          "passed": true
+        },
+        {
+          "clause": "SLA-4_ConservativeCost_Deducted",
+          "status": "SAT",
+          "passed": true
+        },
+        {
+          "clause": "SLA-5_HardStop_And_ZeroLookAhead",
+          "status": "SAT",
+          "passed": true
+        },
+        {
+          "clause": "SLA-6_OOS_Positive",
+          "status": "SAT",
+          "passed": true
+        },
+        {
+          "clause": "SLA-7_Dominates_KOSPI_Full_And_OOS",
+          "status": "SAT",
+          "passed": true
+        }
+      ]
+    },
+    "SL5_CB": {
+      "case": "SL5_CB",
+      "structural_1_to_5": "SAT",
+      "oos_positive_6": "SAT",
+      "dominates_kospi_7": "UNSAT",
+      "clauses": [
+        {
+          "clause": "SLA-1_NoLeverage",
+          "status": "SAT",
+          "passed": true
+        },
+        {
+          "clause": "SLA-2_NoBankruptcy",
+          "status": "SAT",
+          "passed": true
+        },
+        {
+          "clause": "SLA-3_SingleStockCap_LE_20pct",
+          "status": "SAT",
+          "passed": true
+        },
+        {
+          "clause": "SLA-4_ConservativeCost_Deducted",
+          "status": "SAT",
+          "passed": true
+        },
+        {
+          "clause": "SLA-5_HardStop_And_ZeroLookAhead",
+          "status": "SAT",
+          "passed": true
+        },
+        {
+          "clause": "SLA-6_OOS_Positive",
+          "status": "SAT",
+          "passed": true
+        },
+        {
+          "clause": "SLA-7_Dominates_KOSPI_Full_And_OOS",
+          "status": "UNSAT",
+          "passed": false
+        }
+      ]
+    },
+    "SL8_CB": {
+      "case": "SL8_CB",
+      "structural_1_to_5": "SAT",
+      "oos_positive_6": "SAT",
+      "dominates_kospi_7": "SAT",
+      "clauses": [
+        {
+          "clause": "SLA-1_NoLeverage",
+          "status": "SAT",
+          "passed": true
+        },
+        {
+          "clause": "SLA-2_NoBankruptcy",
+          "status": "SAT",
+          "passed": true
+        },
+        {
+          "clause": "SLA-3_SingleStockCap_LE_20pct",
+          "status": "SAT",
+          "passed": true
+        },
+        {
+          "clause": "SLA-4_ConservativeCost_Deducted",
+          "status": "SAT",
+          "passed": true
+        },
+        {
+          "clause": "SLA-5_HardStop_And_ZeroLookAhead",
+          "status": "SAT",
+          "passed": true
+        },
+        {
+          "clause": "SLA-6_OOS_Positive",
+          "status": "SAT",
+          "passed": true
+        },
+        {
+          "clause": "SLA-7_Dominates_KOSPI_Full_And_OOS",
+          "status": "SAT",
+          "passed": true
+        }
+      ]
+    }
+  }
+}

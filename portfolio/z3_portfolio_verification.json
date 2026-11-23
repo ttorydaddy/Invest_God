@@ -1,0 +1,218 @@
+{
+  "P-1_EqualWeight": {
+    "overall_verdict": "SAT",
+    "checks": {
+      "no_bankruptcy": "SAT",
+      "no_leverage_sum_100": "SAT",
+      "weight_bounds": "SAT",
+      "transition_cost_030pct": "SAT",
+      "zero_lookahead": "SAT",
+      "diversification_magic_mdd_or_sharpe": "SAT"
+    },
+    "observed": {
+      "rows": 1439,
+      "rebal_events": 23,
+      "min_equity_krw": 100000000.0,
+      "max_total_weight": 1.0,
+      "max_total_weight_err": 0.0,
+      "rebal_min_target_w": 0.3333333333333333,
+      "rebal_max_target_w": 0.3333333333333333,
+      "max_cost_err_krw": 1.0186340659856796e-10,
+      "port_full_mdd": -0.19163307357146742,
+      "best_individual_mdd": -0.232375988642479,
+      "port_full_sharpe": 1.4690520665554532,
+      "best_individual_sharpe": 1.0970155947382978,
+      "mdd_beats_all_individuals": true,
+      "sharpe_beats_all_individuals": true
+    }
+  },
+  "P-2_MaxSharpe": {
+    "overall_verdict": "SAT",
+    "checks": {
+      "no_bankruptcy": "SAT",
+      "no_leverage_sum_100": "SAT",
+      "weight_bounds": "SAT",
+      "transition_cost_030pct": "SAT",
+      "zero_lookahead": "SAT",
+      "diversification_magic_mdd_or_sharpe": "SAT"
+    },
+    "observed": {
+      "rows": 1439,
+      "rebal_events": 23,
+      "min_equity_krw": 100000000.0,
+      "max_total_weight": 1.0,
+      "max_total_weight_err": 0.0,
+      "rebal_min_target_w": 0.2,
+      "rebal_max_target_w": 0.55,
+      "max_cost_err_krw": 8.731149137020111e-11,
+      "port_full_mdd": -0.2052603949337175,
+      "best_individual_mdd": -0.232375988642479,
+      "port_full_sharpe": 1.4971535211758649,
+      "best_individual_sharpe": 1.0970155947382978,
+      "mdd_beats_all_individuals": true,
+      "sharpe_beats_all_individuals": true
+    }
+  },
+  "P-3_RiskParity": {
+    "overall_verdict": "SAT",
+    "checks": {
+      "no_bankruptcy": "SAT",
+      "no_leverage_sum_100": "SAT",
+      "weight_bounds": "SAT",
+      "transition_cost_030pct": "SAT",
+      "zero_lookahead": "SAT",
+      "diversification_magic_mdd_or_sharpe": "SAT"
+    },
+    "observed": {
+      "rows": 1439,
+      "rebal_events": 23,
+      "min_equity_krw": 100000000.0,
+      "max_total_weight": 1.0,
+      "max_total_weight_err": 0.0,
+      "rebal_min_target_w": 0.2041780941409508,
+      "rebal_max_target_w": 0.4374152682981445,
+      "max_cost_err_krw": 8.731149137020111e-11,
+      "port_full_mdd": -0.19914538629345735,
+      "best_individual_mdd": -0.232375988642479,
+      "port_full_sharpe": 1.5227981468992966,
+      "best_individual_sharpe": 1.0970155947382978,
+      "mdd_beats_all_individuals": true,
+      "sharpe_beats_all_individuals": true
+    }
+  },
+  "P-4_Aggressive": {
+    "overall_verdict": "SAT",
+    "checks": {
+      "no_bankruptcy": "SAT",
+      "no_leverage_sum_100": "SAT",
+      "weight_bounds": "SAT",
+      "transition_cost_030pct": "SAT",
+      "zero_lookahead": "SAT",
+      "diversification_magic_mdd_or_sharpe": "SAT"
+    },
+    "observed": {
+      "rows": 1439,
+      "rebal_events": 23,
+      "min_equity_krw": 100000000.0,
+      "max_total_weight": 1.0,
+      "max_total_weight_err": 0.0,
+      "rebal_min_target_w": 0.15,
+      "rebal_max_target_w": 0.6,
+      "max_cost_err_krw": 1.0913936421275139e-10,
+      "port_full_mdd": -0.19009193995368223,
+      "best_individual_mdd": -0.232375988642479,
+      "port_full_sharpe": 1.2492047534744064,
+      "best_individual_sharpe": 1.0970155947382978,
+      "mdd_beats_all_individuals": true,
+      "sharpe_beats_all_individuals": true
+    }
+  },
+  "P-5a_Dyn_MaxSharpe_5d": {
+    "overall_verdict": "SAT",
+    "checks": {
+      "no_bankruptcy": "SAT",
+      "no_leverage_sum_100": "SAT",
+      "weight_bounds": "SAT",
+      "transition_cost_030pct": "SAT",
+      "zero_lookahead": "SAT",
+      "diversification_magic_mdd_or_sharpe": "SAT"
+    },
+    "observed": {
+      "rows": 1439,
+      "rebal_events": 42,
+      "min_equity_krw": 100000000.0,
+      "max_total_weight": 1.0,
+      "max_total_weight_err": 0.0,
+      "rebal_min_target_w": 0.1,
+      "rebal_max_target_w": 0.6000000000000001,
+      "max_cost_err_krw": 1.0913936421275139e-10,
+      "port_full_mdd": -0.22416259896783985,
+      "best_individual_mdd": -0.232375988642479,
+      "port_full_sharpe": 1.4414989243959475,
+      "best_individual_sharpe": 1.0970155947382978,
+      "mdd_beats_all_individuals": true,
+      "sharpe_beats_all_individuals": true
+    }
+  },
+  "P-5b_Dyn_MaxSharpe_Monthly": {
+    "overall_verdict": "SAT",
+    "checks": {
+      "no_bankruptcy": "SAT",
+      "no_leverage_sum_100": "SAT",
+      "weight_bounds": "SAT",
+      "transition_cost_030pct": "SAT",
+      "zero_lookahead": "SAT",
+      "diversification_magic_mdd_or_sharpe": "SAT"
+    },
+    "observed": {
+      "rows": 1439,
+      "rebal_events": 38,
+      "min_equity_krw": 100000000.0,
+      "max_total_weight": 1.0,
+      "max_total_weight_err": 0.0,
+      "rebal_min_target_w": 0.1,
+      "rebal_max_target_w": 0.6000000000000001,
+      "max_cost_err_krw": 1.0186340659856796e-10,
+      "port_full_mdd": -0.22328893859707977,
+      "best_individual_mdd": -0.232375988642479,
+      "port_full_sharpe": 1.4408142881463097,
+      "best_individual_sharpe": 1.0970155947382978,
+      "mdd_beats_all_individuals": true,
+      "sharpe_beats_all_individuals": true
+    }
+  },
+  "P-5c_Dyn_Aggressive_5d": {
+    "overall_verdict": "SAT",
+    "checks": {
+      "no_bankruptcy": "SAT",
+      "no_leverage_sum_100": "SAT",
+      "weight_bounds": "SAT",
+      "transition_cost_030pct": "SAT",
+      "zero_lookahead": "SAT",
+      "diversification_magic_mdd_or_sharpe": "SAT"
+    },
+    "observed": {
+      "rows": 1439,
+      "rebal_events": 42,
+      "min_equity_krw": 100000000.0,
+      "max_total_weight": 1.0,
+      "max_total_weight_err": 0.0,
+      "rebal_min_target_w": 0.15,
+      "rebal_max_target_w": 0.6,
+      "max_cost_err_krw": 8.731149137020111e-11,
+      "port_full_mdd": -0.25194663939780204,
+      "best_individual_mdd": -0.232375988642479,
+      "port_full_sharpe": 1.2042802796490566,
+      "best_individual_sharpe": 1.0970155947382978,
+      "mdd_beats_all_individuals": false,
+      "sharpe_beats_all_individuals": true
+    }
+  },
+  "P-5d_Dyn_Aggressive_Monthly": {
+    "overall_verdict": "SAT",
+    "checks": {
+      "no_bankruptcy": "SAT",
+      "no_leverage_sum_100": "SAT",
+      "weight_bounds": "SAT",
+      "transition_cost_030pct": "SAT",
+      "zero_lookahead": "SAT",
+      "diversification_magic_mdd_or_sharpe": "SAT"
+    },
+    "observed": {
+      "rows": 1439,
+      "rebal_events": 38,
+      "min_equity_krw": 100000000.0,
+      "max_total_weight": 1.0,
+      "max_total_weight_err": 0.0,
+      "rebal_min_target_w": 0.15,
+      "rebal_max_target_w": 0.6,
+      "max_cost_err_krw": 8.731149137020111e-11,
+      "port_full_mdd": -0.24713896456506335,
+      "best_individual_mdd": -0.232375988642479,
+      "port_full_sharpe": 1.2031317151012755,
+      "best_individual_sharpe": 1.0970155947382978,
+      "mdd_beats_all_individuals": false,
+      "sharpe_beats_all_individuals": true
+    }
+  }
+}

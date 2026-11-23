@@ -1,0 +1,63 @@
+name: Invest_God Optional Email Report (Manual Dispatch Only)
+
+on:
+  # 24/7 자동 스케줄은 paper_trading_24_7.yml로 통합됨 (중복 실행 방지)
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  daily-signal-report:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+
+    env:
+      # 대표님 실전 전환 승인 전까지 기본값은 항상 DRY_RUN=true 안전모드
+      DRY_RUN: ${{ vars.DRY_RUN || 'true' }}
+      SMTP_HOST: ${{ secrets.SMTP_HOST }}
+      SMTP_PORT: ${{ secrets.SMTP_PORT }}
+      SMTP_USER: ${{ secrets.SMTP_USER }}
+      SMTP_APP_PASSWORD: ${{ secrets.SMTP_APP_PASSWORD }}
+      NOTIFY_EMAIL: ${{ secrets.NOTIFY_EMAIL }}
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python 3.11
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: 'pip'
+          cache-dependency-path: 'live/requirements.txt'
+
+      - name: Install live dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r live/requirements.txt
+
+      - name: Run Daily Signal Engine (D-3 / L-3 / Rocket / Rebal)
+        run: python live/daily_signal_engine.py
+
+      - name: Run Upbit Turbo-1 Status Snapshot (Public Read-Only Dry-Run)
+        env:
+          DRY_RUN: 'true'
+        run: python live/upbit_turbo1_bot.py
+
+      - name: Generate PC HTML Dashboard
+        run: python live/dashboard_generator.py
+
+      - name: Send Email Report (or Dry-Run Preview)
+        run: python live/email_notifier.py
+
+      - name: Upload Daily Dashboard & Signal Artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: invest-god-daily-report-${{ github.run_number }}
+          path: |
+            live/output/daily_dashboard.html
+            live/output/latest_email_preview.html
+            live/output/latest_signals.json
+            live/output/latest_upbit_status.json
+          retention-days: 30

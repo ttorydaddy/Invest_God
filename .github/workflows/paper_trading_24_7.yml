@@ -1,0 +1,70 @@
+name: Invest_God 24/7 Cloud Paper Trading (100M KRW)
+
+on:
+  schedule:
+    # 업비트 4시간봉 자동 스캔 (매일 UTC 00:05, 04:05, 08:05, 12:05, 16:05, 20:05)
+    - cron: '5 0,4,8,12,16,20 * * *'
+    # 평일 KRX 장 마감 후 일일 시그널 & 시가평가 (월~금 16:20 KST = 07:20 UTC)
+    - cron: '20 7 * * 1-5'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: invest-god-paper-trading-24-7
+  cancel-in-progress: false
+
+jobs:
+  paper-trading-24-7:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+
+    env:
+      # 1개월 시범운행 안전 고정값 — 실제 주문·외부 이메일 발송 원천 차단
+      DRY_RUN: "true"
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Set up Python 3.11
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: 'pip'
+          cache-dependency-path: 'live/requirements.txt'
+
+      - name: Install live dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r live/requirements.txt
+
+      - name: 1. Run Upbit Turbo-1 4h Bot (Dry-Run)
+        run: python live/upbit_turbo1_bot.py
+
+      - name: 2. Run Daily Signal Engine (D-3 / L-3 / Rocket / Rebal)
+        run: python live/daily_signal_engine.py
+
+      - name: 3. Update 100M KRW Integrated Paper Portfolio Ledger
+        run: python live/paper_portfolio_engine.py
+
+      - name: 4. Verify Phase 2 Z3-Solver SLA & Accounting Integrity
+        run: python live/verify_phase2_z3_sla.py
+
+      - name: 5. Generate PC & GitHub Pages HTML Dashboard
+        run: python live/dashboard_generator.py
+
+      - name: 6. Auto-Commit Updated Paper State & Dashboard
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add live/state/ live/output/ docs/index.html docs/.nojekyll
+          if git diff --cached --quiet; then
+            echo "No changes to commit."
+          else
+            git commit -m "chore(paper): update 100M paper portfolio & dashboard [skip ci]"
+            git push
+          fi
