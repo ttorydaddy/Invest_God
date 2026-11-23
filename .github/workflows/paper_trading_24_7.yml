@@ -54,6 +54,9 @@ jobs:
       - name: 4. Verify Phase 2 Z3-Solver SLA & Accounting Integrity
         run: python live/verify_phase2_z3_sla.py
 
+      - name: 4.5. Fetch Crypto Supply/Demand Weather (Reference Only, Non-Blocking)
+        run: python live/crypto_weather_fetcher.py || true
+
       - name: 5. Generate PC & GitHub Pages HTML Dashboard
         run: python live/dashboard_generator.py
 

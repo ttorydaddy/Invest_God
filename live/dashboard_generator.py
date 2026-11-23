@@ -24,6 +24,7 @@ DOCS_DIR = ROOT_DIR / "docs"
 SIGNALS_PATH = OUTPUT_DIR / "latest_signals.json"
 UPBIT_PATH = OUTPUT_DIR / "latest_upbit_status.json"
 Z3_PATH = OUTPUT_DIR / "z3_phase2_sla.json"
+WEATHER_PATH = OUTPUT_DIR / "latest_crypto_weather.json"
 PAPER_STATE_PATH = STATE_DIR / "paper_portfolio_state.json"
 EQUITY_CSV_PATH = STATE_DIR / "paper_equity_history.csv"
 TRADES_CSV_PATH = STATE_DIR / "paper_trades_log.csv"
@@ -296,6 +297,82 @@ def build_checklist(signals: Dict[str, Any], upbit: Dict[str, Any]) -> List[str]
     return items
 
 
+def build_crypto_weather_section(weather: Dict[str, Any]) -> str:
+    if not weather:
+        return ""
+    st = weather.get("stablecoin_mcap", {})
+    ib = weather.get("ibit_etf", {})
+    fg = weather.get("fear_and_greed", {})
+
+    st_val = f"${st.get('mcap_billion_usd', 0):,.2f}B" if st.get("status") == "OK" else "조회 지연"
+    st_sub = (
+        f"7일 {fmt_pct(st.get('chg_7d_pct', 0))} ({st.get('chg_7d_billion_usd', 0):+.2f}B$) &nbsp;|&nbsp; "
+        f"30일 {fmt_pct(st.get('chg_30d_pct', 0))} ({st.get('chg_30d_billion_usd', 0):+.2f}B$)"
+        if st.get("status") == "OK"
+        else "-"
+    )
+
+    ib_val = f"${ib.get('close_usd', 0):,.2f}" if ib.get("status") == "OK" else "조회 지연"
+    ib_sub = (
+        f"MA20 대비 {fmt_pct(ib.get('gap_ma20_pct', 0))} &nbsp;|&nbsp; "
+        f"5일 {fmt_pct(ib.get('ret_5d_pct', 0))} &nbsp;|&nbsp; 거래대금 {ib.get('vol_ratio_5d_vs_20d', 1.0):.2f}x"
+        if ib.get("status") == "OK"
+        else "-"
+    )
+
+    fg_val = f"{fg.get('score', '-')} / 100" if fg.get("status") == "OK" else "조회 지연"
+    fg_diff = fg.get("diff_7d", 0)
+    fg_sub = (
+        f"등급: <strong>{html.escape(fg.get('grade_kr','-'))}</strong> &nbsp;|&nbsp; "
+        f"7일 전({fg.get('score_7d_ago','-')}점) 대비 <strong>{fg_diff:+d}p</strong>"
+        if fg.get("status") == "OK"
+        else "-"
+    )
+
+    return f"""
+  <div class="card" style="margin-bottom:20px;border:1px solid #334155;">
+    <div class="card-head">
+      <div>
+        <h3 class="card-title">🌤️ 코인 수급 기상청 (참고용 — 자동매매 룰 미개입)</h3>
+        <div style="font-size:12px;color:#94a3b8;margin-top:2px;">갱신: {html.escape(weather.get('generated_at_kst','-'))} | 무료 공개 데이터 기반 거시 수급 참고 지표 (Turbo-1/D-3/L-3/로켓 매매 규칙에 일절 개입하지 않음)</div>
+      </div>
+      <span style="background:rgba(148,163,184,0.14);color:#cbd5e1;padding:4px 10px;border-radius:999px;font-size:11px;font-weight:600;">ℹ️ 순수 참고용</span>
+    </div>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:14px;">
+      <div style="background:#1e293b;border-radius:12px;padding:15px;border:1px solid #334155;">
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px;">
+          <span style="font-size:13px;font-weight:700;color:#e2e8f0;">💵 ① 스테이블코인 총시총 (실탄)</span>
+          {badge_html(st.get('traffic_light','YELLOW'), st.get('label','-'))}
+        </div>
+        <div style="font-size:22px;font-weight:800;margin-bottom:4px;">{st_val}</div>
+        <div style="font-size:12px;color:#cbd5e1;margin-bottom:8px;">{st_sub}</div>
+        <div style="font-size:12px;color:#94a3b8;line-height:1.45;">{html.escape(st.get('comment_kr','-'))}</div>
+      </div>
+
+      <div style="background:#1e293b;border-radius:12px;padding:15px;border:1px solid #334155;">
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px;">
+          <span style="font-size:13px;font-weight:700;color:#e2e8f0;">🏦 ② 미국 BTC 현물 ETF (IBIT)</span>
+          {badge_html(ib.get('traffic_light','YELLOW'), ib.get('label','-'))}
+        </div>
+        <div style="font-size:22px;font-weight:800;margin-bottom:4px;">{ib_val}</div>
+        <div style="font-size:12px;color:#cbd5e1;margin-bottom:8px;">{ib_sub}</div>
+        <div style="font-size:12px;color:#94a3b8;line-height:1.45;">{html.escape(ib.get('comment_kr','-'))}</div>
+      </div>
+
+      <div style="background:#1e293b;border-radius:12px;padding:15px;border:1px solid #334155;">
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px;">
+          <span style="font-size:13px;font-weight:700;color:#e2e8f0;">🌡️ ③ 크립토 공포·탐욕 지수</span>
+          {badge_html(fg.get('traffic_light','YELLOW'), fg.get('label','-'))}
+        </div>
+        <div style="font-size:22px;font-weight:800;margin-bottom:4px;">{fg_val}</div>
+        <div style="font-size:12px;color:#cbd5e1;margin-bottom:8px;">{fg_sub}</div>
+        <div style="font-size:12px;color:#94a3b8;line-height:1.45;">{html.escape(fg.get('comment_kr','-'))}</div>
+      </div>
+    </div>
+  </div>
+"""
+
+
 def render_html(
     signals: Dict[str, Any],
     upbit: Dict[str, Any],
@@ -303,6 +380,7 @@ def render_html(
     paper: Dict[str, Any],
     history: List[Dict[str, str]],
     trades: List[Dict[str, str]],
+    weather: Dict[str, Any],
 ) -> str:
     b = signals.get("buckets", {})
     d3 = b.get("krx_medium_d3", {})
@@ -557,6 +635,8 @@ def render_html(
     </div>
   </div>
 
+  {build_crypto_weather_section(weather)}
+
   <footer>
     Invest_God Phase 2 Automated Quant System • 1억 원 1개월 가상투자 시범운행 • Zero Leverage • Default DRY_RUN Safe Mode
   </footer>
@@ -571,11 +651,12 @@ def main() -> int:
     signals = json.loads(SIGNALS_PATH.read_text(encoding="utf-8")) if SIGNALS_PATH.exists() else {}
     upbit = json.loads(UPBIT_PATH.read_text(encoding="utf-8")) if UPBIT_PATH.exists() else {}
     z3_sla = json.loads(Z3_PATH.read_text(encoding="utf-8")) if Z3_PATH.exists() else {}
+    weather = json.loads(WEATHER_PATH.read_text(encoding="utf-8")) if WEATHER_PATH.exists() else {}
     paper = json.loads(PAPER_STATE_PATH.read_text(encoding="utf-8")) if PAPER_STATE_PATH.exists() else {}
     history = load_csv_rows(EQUITY_CSV_PATH)
     trades = load_csv_rows(TRADES_CSV_PATH)
 
-    doc = render_html(signals, upbit, z3_sla, paper, history, trades)
+    doc = render_html(signals, upbit, z3_sla, paper, history, trades, weather)
     DASHBOARD_OUT.write_text(doc, encoding="utf-8")
     DOCS_DIR.mkdir(parents=True, exist_ok=True)
     PAGES_INDEX_OUT.write_text(doc, encoding="utf-8")
