@@ -1,5 +1,5 @@
 {
-  "generated_at_kst": "2026-11-24 18:43:57 KST",
+  "generated_at_kst": "2026-11-25 03:58:29 KST",
   "disclaimer": "참고용 공개 수급 지표 — 자동매매 룰(Turbo-1/D-3/L-3/로켓)에 일절 미개입",
   "stablecoin_mcap": {
     "status": "OK",
@@ -16,16 +16,16 @@
   "ibit_etf": {
     "status": "OK",
     "ticker": "IBIT",
-    "as_of_date": "2026-11-23",
-    "close_usd": 34.62,
-    "ma20_usd": 40.81,
-    "gap_ma20_pct": -15.16,
-    "ret_5d_pct": -5.9,
-    "avg_dvol_5d_billion_usd": 2.51,
-    "vol_ratio_5d_vs_20d": 1.16,
+    "as_of_date": "2026-11-24",
+    "close_usd": 33.88,
+    "ma20_usd": 40.21,
+    "gap_ma20_pct": -15.75,
+    "ret_5d_pct": -6.25,
+    "avg_dvol_5d_billion_usd": 2.45,
+    "vol_ratio_5d_vs_20d": 1.13,
     "traffic_light": "RED",
     "label": "기관 약세 🔴",
-    "comment_kr": "IBIT가 20일선(-15.16%) 아래로 밀리며 최근 5일 -5.90% 약세 흐름입니다."
+    "comment_kr": "IBIT가 20일선(-15.75%) 아래로 밀리며 최근 5일 -6.25% 약세 흐름입니다."
   },
   "fear_and_greed": {
     "status": "OK",
