@@ -60,12 +60,12 @@
       "cash_krw": 15012056.23,
       "equity_krw": 15012056.23,
       "mode": "SAFE_RP",
-      "last_skh_close": 1085000.0,
+      "last_skh_close": 1158000.0,
       "last_eval_date": "2026-11-25",
       "holdings_summary": "단기채/RP(연 2.5%) 100% 안전 대피"
     }
   },
-  "last_updated_kst": "2026-11-25 03:58:28 KST",
+  "last_updated_kst": "2026-11-25 07:19:55 KST",
   "cum_return_pct": -0.0337,
   "cum_pnl_krw": -33722.0,
   "drawdown_pct": -0.0337

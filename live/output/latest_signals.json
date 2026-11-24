@@ -1,6 +1,6 @@
 {
-  "generated_at_kst": "2026-11-25 03:58:21 KST",
-  "generated_at_utc": "2026-11-24 18:58:28 UTC",
+  "generated_at_kst": "2026-11-25 07:19:50 KST",
+  "generated_at_utc": "2026-11-24 22:19:54 UTC",
   "dry_run": true,
   "portfolio_version": "Master Portfolio v2 (85:15 Barbell)",
   "portfolio_weights_pct": {
@@ -46,7 +46,7 @@
         "universe_size": 80,
         "scanned_ok": 80,
         "scan_failed": 0,
-        "latest_stock_date": "2026-11-23",
+        "latest_stock_date": "2026-11-24",
         "data_source": "yfinance live (no local fallback)"
       },
       "breakout_candidates": [],
@@ -90,9 +90,9 @@
           "ticker": "KRW-BTC",
           "status": "OK",
           "as_of_date": "2026-11-24",
-          "close": 81624000.0,
-          "ma120": 103143983.33,
-          "gap_ma120_pct": -20.86,
+          "close": 81641000.0,
+          "ma120": 103144125.0,
+          "gap_ma120_pct": -20.85,
           "regime": "SAFE_HAVEN",
           "base_weight_pct": 30.0,
           "target_weight_pct": 0.0
@@ -126,15 +126,15 @@
       "status": "OK",
       "name": "SK하이닉스 2배 로켓",
       "ticker": "000660.KS",
-      "as_of_date": "2026-11-23",
-      "close": 1085000,
-      "ma20": 1263600,
-      "ma120": 1768050,
-      "spread_ma20_vs_ma120_pct": -28.53,
+      "as_of_date": "2026-11-24",
+      "close": 1158000,
+      "ma20": 1254450,
+      "ma120": 1758258,
+      "spread_ma20_vs_ma120_pct": -28.65,
       "signal": "SAFE_RP",
       "action_kr": "단기채/RP 대피 (RP / 파킹형 단기채 ETF (CD금리·KOFR))",
       "traffic_light": "RED",
-      "summary": "데드크로스 상태 (MA20 1,263,600원 <= MA120 1,768,050원, -28.53%) → 단기채/RP 전액 대피"
+      "summary": "데드크로스 상태 (MA20 1,254,450원 <= MA120 1,758,258원, -28.65%) → 단기채/RP 전액 대피"
     }
   },
   "quarterly_rebalancing": {
