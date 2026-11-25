@@ -1,6 +1,6 @@
 {
-  "generated_at_kst": "2026-11-26 03:02:50 KST",
-  "generated_at_utc": "2026-11-25 18:02:59 UTC",
+  "generated_at_kst": "2026-11-26 06:36:09 KST",
+  "generated_at_utc": "2026-11-25 21:36:14 UTC",
   "dry_run": true,
   "portfolio_version": "Master Portfolio v2 (85:15 Barbell)",
   "portfolio_weights_pct": {
@@ -90,9 +90,9 @@
           "ticker": "KRW-BTC",
           "status": "OK",
           "as_of_date": "2026-11-25",
-          "close": 81243000.0,
-          "ma120": 103047150.0,
-          "gap_ma120_pct": -21.16,
+          "close": 81934000.0,
+          "ma120": 103052908.33,
+          "gap_ma120_pct": -20.49,
           "regime": "SAFE_HAVEN",
           "base_weight_pct": 30.0,
           "target_weight_pct": 0.0
