@@ -1,31 +1,31 @@
 {
-  "generated_at_kst": "2026-11-25 17:19:15 KST",
+  "generated_at_kst": "2026-11-26 03:03:01 KST",
   "disclaimer": "참고용 공개 수급 지표 — 자동매매 룰(Turbo-1/D-3/L-3/로켓)에 일절 미개입",
   "stablecoin_mcap": {
     "status": "OK",
     "as_of_date": "2026-11-25",
-    "mcap_billion_usd": 284.2,
-    "chg_7d_pct": -1.33,
-    "chg_30d_pct": -5.86,
-    "chg_7d_billion_usd": -3.82,
-    "chg_30d_billion_usd": -17.69,
+    "mcap_billion_usd": 284.23,
+    "chg_7d_pct": -1.32,
+    "chg_30d_pct": -5.85,
+    "chg_7d_billion_usd": -3.79,
+    "chg_30d_billion_usd": -17.66,
     "traffic_light": "RED",
     "label": "유동성 이탈 🔴",
-    "comment_kr": "스테이블코인 시총이 7일 -3.82B$ / 30일 -17.69B$ 감소하며 시장 유동성이 빠져나가는 중입니다."
+    "comment_kr": "스테이블코인 시총이 7일 -3.79B$ / 30일 -17.66B$ 감소하며 시장 유동성이 빠져나가는 중입니다."
   },
   "ibit_etf": {
     "status": "OK",
     "ticker": "IBIT",
-    "as_of_date": "2026-11-24",
-    "close_usd": 33.76,
-    "ma20_usd": 40.21,
-    "gap_ma20_pct": -16.04,
-    "ret_5d_pct": -6.59,
-    "avg_dvol_5d_billion_usd": 2.54,
-    "vol_ratio_5d_vs_20d": 1.16,
+    "as_of_date": "2026-11-25",
+    "close_usd": 33.75,
+    "ma20_usd": 39.59,
+    "gap_ma20_pct": -14.75,
+    "ret_5d_pct": -4.55,
+    "avg_dvol_5d_billion_usd": 2.44,
+    "vol_ratio_5d_vs_20d": 1.1,
     "traffic_light": "RED",
     "label": "기관 약세 🔴",
-    "comment_kr": "IBIT가 20일선(-16.04%) 아래로 밀리며 최근 5일 -6.59% 약세 흐름입니다."
+    "comment_kr": "IBIT가 20일선(-14.75%) 아래로 밀리며 최근 5일 -4.55% 약세 흐름입니다."
   },
   "fear_and_greed": {
     "status": "OK",
