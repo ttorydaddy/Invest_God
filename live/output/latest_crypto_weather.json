@@ -1,17 +1,17 @@
 {
-  "generated_at_kst": "2026-11-26 06:36:16 KST",
+  "generated_at_kst": "2026-11-26 17:04:45 KST",
   "disclaimer": "참고용 공개 수급 지표 — 자동매매 룰(Turbo-1/D-3/L-3/로켓)에 일절 미개입",
   "stablecoin_mcap": {
     "status": "OK",
-    "as_of_date": "2026-11-25",
-    "mcap_billion_usd": 284.26,
-    "chg_7d_pct": -1.31,
-    "chg_30d_pct": -5.84,
-    "chg_7d_billion_usd": -3.76,
-    "chg_30d_billion_usd": -17.63,
+    "as_of_date": "2026-11-26",
+    "mcap_billion_usd": 283.98,
+    "chg_7d_pct": -1.05,
+    "chg_30d_pct": -5.7,
+    "chg_7d_billion_usd": -3.01,
+    "chg_30d_billion_usd": -17.18,
     "traffic_light": "RED",
     "label": "유동성 이탈 🔴",
-    "comment_kr": "스테이블코인 시총이 7일 -3.76B$ / 30일 -17.63B$ 감소하며 시장 유동성이 빠져나가는 중입니다."
+    "comment_kr": "스테이블코인 시총이 7일 -3.01B$ / 30일 -17.18B$ 감소하며 시장 유동성이 빠져나가는 중입니다."
   },
   "ibit_etf": {
     "status": "OK",
@@ -21,7 +21,7 @@
     "ma20_usd": 39.6,
     "gap_ma20_pct": -13.97,
     "ret_5d_pct": -3.65,
-    "avg_dvol_5d_billion_usd": 2.61,
+    "avg_dvol_5d_billion_usd": 2.62,
     "vol_ratio_5d_vs_20d": 1.16,
     "traffic_light": "RED",
     "label": "기관 약세 🔴",
@@ -29,14 +29,14 @@
   },
   "fear_and_greed": {
     "status": "OK",
-    "as_of_date": "2026-11-25",
-    "score": 13,
-    "score_7d_ago": 10,
-    "diff_7d": 3,
+    "as_of_date": "2026-11-26",
+    "score": 11,
+    "score_7d_ago": 12,
+    "diff_7d": -1,
     "grade_kr": "극단적 공포",
     "raw_classification": "Extreme Fear",
     "traffic_light": "RED",
-    "label": "극단적 공포 (13점)",
-    "comment_kr": "공포·탐욕 13점(극단적 공포, 7일 대비 +3p) — 시장 투심 극도 위축 구간입니다."
+    "label": "극단적 공포 (11점)",
+    "comment_kr": "공포·탐욕 11점(극단적 공포, 7일 대비 -1p) — 시장 투심 극도 위축 구간입니다."
   }
 }

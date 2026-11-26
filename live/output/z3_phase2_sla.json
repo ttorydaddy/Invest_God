@@ -1,5 +1,5 @@
 {
-  "verified_at_kst": "2026-11-26 06:36:15 KST",
+  "verified_at_kst": "2026-11-26 17:04:44 KST",
   "parsed_files": {
     "config_json": "/home/runner/work/Invest_God/Invest_God/live/config.json",
     "github_workflow_yml": "/home/runner/work/Invest_God/Invest_God/.github/workflows/paper_trading_24_7.yml",
@@ -35,8 +35,8 @@
     "config_weights_sum": 1.0,
     "paper_portfolio": {
       "initial_capital_krw": 100000000.0,
-      "total_equity_krw": 99611006.51,
-      "sum_bucket_equities_krw": 99611006.51,
+      "total_equity_krw": 99793226.51,
+      "sum_bucket_equities_krw": 99793226.51,
       "min_bucket_cash_krw": 122760.43,
       "day_num": 4,
       "dry_run": true
