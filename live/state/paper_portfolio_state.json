@@ -3,11 +3,11 @@
   "dry_run": true,
   "trial_days": 30,
   "start_date": "2026-11-23",
-  "last_updated_date": "2026-11-26",
-  "day_num": 4,
+  "last_updated_date": "2026-11-27",
+  "day_num": 5,
   "initial_capital_krw": 100000000.0,
   "hwm_krw": 100000000.0,
-  "total_equity_krw": 99793226.51,
+  "total_equity_krw": 99796195.61,
   "buckets": {
     "crypto_short_turbo1": {
       "name": "① 단기 코인 (Turbo-1)",
@@ -20,10 +20,10 @@
     "krx_medium_d3": {
       "name": "② 중기 KRX (D-3)",
       "initial_krw": 28330000.0,
-      "cash_krw": 28335821.63,
-      "equity_krw": 28335821.63,
-      "last_interest_date": "2026-11-26",
-      "last_action_date": "2026-11-26",
+      "cash_krw": 28337762.44,
+      "equity_krw": 28337762.44,
+      "last_interest_date": "2026-11-27",
+      "last_action_date": "2026-11-27",
       "holdings_summary": "현금/RP(연 2.5%) 100% 방어 대기",
       "positions": {}
     },
@@ -57,16 +57,16 @@
     "skh_rocket_2x": {
       "name": "④ 하이닉스 2배 로켓",
       "initial_krw": 15010000.0,
-      "cash_krw": 15013084.45,
-      "equity_krw": 15013084.45,
+      "cash_krw": 15014112.74,
+      "equity_krw": 15014112.74,
       "mode": "SAFE_RP",
-      "last_skh_close": 1053000.0,
-      "last_eval_date": "2026-11-26",
+      "last_skh_close": 1030000.0,
+      "last_eval_date": "2026-11-27",
       "holdings_summary": "단기채/RP(연 2.5%) 100% 안전 대피"
     }
   },
-  "last_updated_kst": "2026-11-26 17:04:43 KST",
-  "cum_return_pct": -0.2068,
-  "cum_pnl_krw": -206773.0,
-  "drawdown_pct": -0.2068
+  "last_updated_kst": "2026-11-27 02:48:37 KST",
+  "cum_return_pct": -0.2038,
+  "cum_pnl_krw": -203804.0,
+  "drawdown_pct": -0.2038
 }
