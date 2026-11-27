@@ -7,7 +7,7 @@
   "day_num": 5,
   "initial_capital_krw": 100000000.0,
   "hwm_krw": 100000000.0,
-  "total_equity_krw": 99796195.61,
+  "total_equity_krw": 99966703.61,
   "buckets": {
     "crypto_short_turbo1": {
       "name": "① 단기 코인 (Turbo-1)",
@@ -31,7 +31,7 @@
       "name": "③ 장기 코어 (L-3)",
       "initial_krw": 28330000.0,
       "cash_krw": 122760.43,
-      "equity_krw": 28114320.43,
+      "equity_krw": 28284828.43,
       "initialized": true,
       "last_rebal_month": "2026-11",
       "holdings_summary": "KODEX 골드선물(H) 700주 + KODEX 단기채권 124주",
@@ -41,7 +41,7 @@
           "name": "KODEX 골드선물(H)",
           "qty": 700,
           "entry_price": 20200.0,
-          "last_price": 19915.0,
+          "last_price": 20160.0,
           "weight_target_pct": 50.0
         },
         "SHORT_BOND": {
@@ -49,7 +49,7 @@
           "name": "KODEX 단기채권",
           "qty": 124,
           "entry_price": 113275.0,
-          "last_price": 113315.0,
+          "last_price": 113307.0,
           "weight_target_pct": 50.0
         }
       }
@@ -60,13 +60,13 @@
       "cash_krw": 15014112.74,
       "equity_krw": 15014112.74,
       "mode": "SAFE_RP",
-      "last_skh_close": 1030000.0,
+      "last_skh_close": 1079000.0,
       "last_eval_date": "2026-11-27",
       "holdings_summary": "단기채/RP(연 2.5%) 100% 안전 대피"
     }
   },
-  "last_updated_kst": "2026-11-27 03:24:24 KST",
-  "cum_return_pct": -0.2038,
-  "cum_pnl_krw": -203804.0,
-  "drawdown_pct": -0.2038
+  "last_updated_kst": "2026-11-27 11:47:10 KST",
+  "cum_return_pct": -0.0333,
+  "cum_pnl_krw": -33296.0,
+  "drawdown_pct": -0.0333
 }
