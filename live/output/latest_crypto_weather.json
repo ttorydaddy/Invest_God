@@ -1,5 +1,5 @@
 {
-  "generated_at_kst": "2026-11-28 02:32:58 KST",
+  "generated_at_kst": "2026-11-28 09:00:23 KST",
   "disclaimer": "참고용 공개 수급 지표 — 자동매매 룰(Turbo-1/D-3/L-3/로켓)에 일절 미개입",
   "stablecoin_mcap": {
     "status": "OK",
@@ -17,26 +17,26 @@
     "status": "OK",
     "ticker": "IBIT",
     "as_of_date": "2026-11-27",
-    "close_usd": 33.69,
-    "ma20_usd": 39.0,
-    "gap_ma20_pct": -13.61,
-    "ret_5d_pct": -3.95,
-    "avg_dvol_5d_billion_usd": 2.39,
-    "vol_ratio_5d_vs_20d": 1.06,
+    "close_usd": 33.86,
+    "ma20_usd": 39.01,
+    "gap_ma20_pct": -13.21,
+    "ret_5d_pct": -3.48,
+    "avg_dvol_5d_billion_usd": 2.42,
+    "vol_ratio_5d_vs_20d": 1.07,
     "traffic_light": "RED",
     "label": "기관 약세 🔴",
-    "comment_kr": "IBIT가 20일선(-13.61%) 아래로 밀리며 최근 5일 -3.95% 약세 흐름입니다."
+    "comment_kr": "IBIT가 20일선(-13.21%) 아래로 밀리며 최근 5일 -3.48% 약세 흐름입니다."
   },
   "fear_and_greed": {
     "status": "OK",
-    "as_of_date": "2026-11-27",
-    "score": 12,
-    "score_7d_ago": 12,
-    "diff_7d": 0,
+    "as_of_date": "2026-11-28",
+    "score": 10,
+    "score_7d_ago": 11,
+    "diff_7d": -1,
     "grade_kr": "극단적 공포",
     "raw_classification": "Extreme Fear",
     "traffic_light": "RED",
-    "label": "극단적 공포 (12점)",
-    "comment_kr": "공포·탐욕 12점(극단적 공포, 7일 대비 +0p) — 시장 투심 극도 위축 구간입니다."
+    "label": "극단적 공포 (10점)",
+    "comment_kr": "공포·탐욕 10점(극단적 공포, 7일 대비 -1p) — 시장 투심 극도 위축 구간입니다."
   }
 }

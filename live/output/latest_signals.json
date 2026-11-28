@@ -1,6 +1,6 @@
 {
-  "generated_at_kst": "2026-11-28 02:32:52 KST",
-  "generated_at_utc": "2026-11-27 17:32:57 UTC",
+  "generated_at_kst": "2026-11-28 09:00:16 KST",
+  "generated_at_utc": "2026-11-28 00:00:21 UTC",
   "dry_run": true,
   "portfolio_version": "Master Portfolio v2 (85:15 Barbell)",
   "portfolio_weights_pct": {
@@ -46,31 +46,11 @@
         "universe_size": 80,
         "scanned_ok": 80,
         "scan_failed": 0,
-        "latest_stock_date": "2026-11-26",
+        "latest_stock_date": "2026-11-27",
         "data_source": "yfinance live (no local fallback)"
       },
       "breakout_candidates": [],
-      "near_watchlist": [
-        {
-          "code": "041510",
-          "name": "에스엠",
-          "market": "KOSDAQ",
-          "as_of_date": "2026-11-26",
-          "close": 100200,
-          "daily_ret_pct": 4.05,
-          "trading_value_bkrw": 322.2,
-          "vol_surge_ratio": 1.52,
-          "prev_20d_high": 101600,
-          "ma20": 82775,
-          "ma60": 81590,
-          "market_regime_pass": false,
-          "missing": [
-            "시장레짐",
-            "거래대금2.5x",
-            "20일신고가"
-          ]
-        }
-      ],
+      "near_watchlist": [],
       "investor_flow_note": "외국인·기관 확정 수급(>=+2.0% 및 3일 누적>0%)은 16:00 KST 이후 증권사 조건검색식에서 최종 교차 확인하세요."
     },
     "longterm_core_l3": {
@@ -109,10 +89,10 @@
           "name": "비트코인 (업비트 KRW-BTC)",
           "ticker": "KRW-BTC",
           "status": "OK",
-          "as_of_date": "2026-11-27",
-          "close": 80730000.0,
-          "ma120": 102886100.0,
-          "gap_ma120_pct": -21.53,
+          "as_of_date": "2026-11-28",
+          "close": 81235000.0,
+          "ma120": 102814308.33,
+          "gap_ma120_pct": -20.99,
           "regime": "SAFE_HAVEN",
           "base_weight_pct": 30.0,
           "target_weight_pct": 0.0
@@ -146,15 +126,15 @@
       "status": "OK",
       "name": "SK하이닉스 2배 로켓",
       "ticker": "000660.KS",
-      "as_of_date": "2026-11-26",
-      "close": 1053000,
-      "ma20": 1207950,
-      "ma120": 1736258,
-      "spread_ma20_vs_ma120_pct": -30.43,
+      "as_of_date": "2026-11-27",
+      "close": 1110000,
+      "ma20": 1192550,
+      "ma120": 1726358,
+      "spread_ma20_vs_ma120_pct": -30.92,
       "signal": "SAFE_RP",
       "action_kr": "단기채/RP 대피 (RP / 파킹형 단기채 ETF (CD금리·KOFR))",
       "traffic_light": "RED",
-      "summary": "데드크로스 상태 (MA20 1,207,950원 <= MA120 1,736,258원, -30.43%) → 단기채/RP 전액 대피"
+      "summary": "데드크로스 상태 (MA20 1,192,550원 <= MA120 1,726,358원, -30.92%) → 단기채/RP 전액 대피"
     }
   },
   "quarterly_rebalancing": {
