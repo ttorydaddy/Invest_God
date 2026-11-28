@@ -1,17 +1,17 @@
 {
-  "generated_at_kst": "2026-11-28 09:00:23 KST",
+  "generated_at_kst": "2026-11-28 16:36:36 KST",
   "disclaimer": "참고용 공개 수급 지표 — 자동매매 룰(Turbo-1/D-3/L-3/로켓)에 일절 미개입",
   "stablecoin_mcap": {
     "status": "OK",
-    "as_of_date": "2026-11-27",
-    "mcap_billion_usd": 283.7,
-    "chg_7d_pct": -0.52,
-    "chg_30d_pct": -5.81,
-    "chg_7d_billion_usd": -1.48,
-    "chg_30d_billion_usd": -17.49,
+    "as_of_date": "2026-11-28",
+    "mcap_billion_usd": 283.09,
+    "chg_7d_pct": -0.39,
+    "chg_30d_pct": -5.41,
+    "chg_7d_billion_usd": -1.1,
+    "chg_30d_billion_usd": -16.2,
     "traffic_light": "RED",
     "label": "유동성 이탈 🔴",
-    "comment_kr": "스테이블코인 시총이 7일 -1.48B$ / 30일 -17.49B$ 감소하며 시장 유동성이 빠져나가는 중입니다."
+    "comment_kr": "스테이블코인 시총이 7일 -1.10B$ / 30일 -16.20B$ 감소하며 시장 유동성이 빠져나가는 중입니다."
   },
   "ibit_etf": {
     "status": "OK",
